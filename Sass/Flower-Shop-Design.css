@@ -580,4 +580,405 @@ main #slider .images .item img {
           transform: matrix3d(1, 0.00017, 0, 0, -0.00017, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   overflow: hidden;
 }
+
+#shop {
+  margin-top: 50px;
+}
+
+#shop .categories {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 17px;
+}
+
+#shop .categories .activeCategory {
+  color: #f34f3f;
+}
+
+#shop .categories li {
+  cursor: pointer;
+  float: left;
+  margin-right: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+#shop .categories li a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+#shop .categories li a:hover {
+  color: #f34f3f;
+}
+
+#shop .types {
+  cursor: pointer;
+}
+
+#shop .types .type {
+  display: none;
+}
+
+#shop .types .activetype {
+  display: block;
+}
+
+#shop .types .item {
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+#shop .types .item .text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 295px;
+}
+
+#shop .types .item .text .name {
+  font-size: 12px;
+}
+
+#shop .types .item .text .action {
+  margin-left: -400px;
+  overflow: hidden;
+  color: #afafaf;
+  font-size: 12px;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+#shop .types .item .text .action:hover {
+  color: #f34f3f;
+}
+
+#shop .types .item .text .price {
+  color: #afafaf;
+  font-size: 12px;
+}
+
+#shop .types .item .image {
+  margin-left: 15px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#shop .types .item .image img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+#shop .types .item .image img:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+#shop .types .item .image .expired {
+  background-color: #070706;
+  color: cornsilk;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.valentine {
+  background-color: #eeeded;
+  height: 500px;
+  margin-top: 110px;
+  padding-top: 90px;
+}
+
+.valentine .valentineVideo {
+  overflow: hidden;
+  position: relative;
+  padding-left: 50px;
+}
+
+.valentine .valentineVideo .videopart {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.valentine .valentineVideo .videopart img:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.valentine .valentineVideo .videopart img {
+  height: 450px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.valentine .valentineVideo .videopart i {
+  background-color: #e0d6d6;
+  padding: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  color: red;
+  top: 60%;
+  left: 50%;
+  font-size: 20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.valentine .quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 80px;
+}
+
+.valentine .quote .title {
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.valentine .quote .title span {
+  color: red;
+}
+
+.valentine .quote .context {
+  padding-bottom: 20px;
+  width: 550px;
+}
+
+.valentine .quote .context p {
+  margin-left: 5px;
+  font-size: 16px;
+  opacity: 50%;
+  font-family: 'Lora',serif;
+}
+
+.valentine .quote .hearticons .savethe, .valentine .quote .hearticons .world {
+  margin-top: 10px;
+}
+
+.valentine .quote .hearticons .loveto span, .valentine .quote .hearticons .savethe span, .valentine .quote .hearticons .world span {
+  margin-left: 5px;
+  font-size: 16px;
+  opacity: 50%;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+
+#team {
+  margin-top: 80px;
+}
+
+#team .container .text .header {
+  font-size: 38px;
+  line-height: 1.447em;
+  color: #2b2b2b;
+  font-family: "Playfair Display", serif;
+}
+
+#team .container .text .description {
+  font-size: 17px;
+  line-height: 29px;
+  font-family: "Lora", serif;
+  color: #6d6a6a;
+  max-width: 635px;
+  min-width: 635px;
+  margin: 0 auto;
+}
+
+#team .container .row .member .name {
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+#team .container .row .member .position {
+  font-size: 12px;
+  color: #afafaf;
+  margin: 2px 0 4px;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+#subscribe-field {
+  margin-top: 170px;
+  background-image: url("../photos/email-background.png");
+  padding: 192px 0;
+}
+
+#subscribe-field .container .text {
+  margin: 0 0 30px;
+}
+
+#subscribe-field .container .text p {
+  font-size: 30px;
+  line-height: 1.4em;
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+
+#subscribe-field .container .row .email .input {
+  color: #959595;
+  font-size: 12px;
+  background-color: white;
+  border-color: #e8e8e8;
+  padding: 19px 18px;
+  line-height: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 0;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+#subscribe-field .container .row .subscribe .button {
+  cursor: pointer;
+  font-weight: 500;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 0px;
+  color: white;
+  background-color: #ff3d2a;
+  outline: 0;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 42px;
+  border: 1px solid transparent;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#subscribe-field .container .row .subscribe .button:hover {
+  background: #ff2f2f;
+}
+
+#blog {
+  background: #f7f7f7;
+  padding: 100px 0;
+}
+
+#blog .container .text .header {
+  font-size: 38px;
+  line-height: 1.447em;
+  color: #2b2b2b;
+  font-family: "Playfair Display", serif;
+  margin: 0 0 19px;
+}
+
+#blog .container .text .description {
+  font-size: 17px;
+  line-height: 29px;
+  margin: 14px 0 0;
+  font-family: "Lora", serif;
+  color: #6d6a6a;
+  max-width: 635px;
+  min-width: 635px;
+  margin: 0 auto;
+}
+
+#blog .container .row .item .image {
+  position: relative;
+  width: 355px;
+  overflow: hidden;
+}
+
+#blog .container .row .item .image img {
+  width: 355px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+#blog .container .row .item .image img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#blog .container .row .item .image .date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 12px 16px 0px;
+  height: 32px;
+}
+
+#blog .container .row .item .image .date p {
+  letter-spacing: 0.15em;
+  color: #000;
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+#blog .container .row .item .image .date p:hover {
+  color: #f34f3f;
+}
+
+#blog .container .row .item .title {
+  font-size: 22px;
+  line-height: 1.363em;
+  margin: 19px 0 3px;
+  color: #2b2b2b;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+
+#blog .container .row .item .info {
+  margin: 12px 0 0;
+  font-family: "Lora", serif;
+  font-size: 15px;
+  color: #6d6a6a;
+  text-align: center;
+}
 /*# sourceMappingURL=Flower-Shop-Design.css.map */
