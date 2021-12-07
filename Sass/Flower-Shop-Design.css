@@ -362,7 +362,7 @@ header nav .cart-dropdown ul p {
   color: #737373;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   border-bottom: 0;
   padding: 15px 0;
 }
@@ -413,7 +413,8 @@ header nav .cart-dropdown ul li .info-holder h6 {
   line-height: 1;
 }
 
-header nav .cart-dropdown ul li .info-holder .quantity, header nav .cart-dropdown ul li .info-holder .amount {
+header nav .cart-dropdown ul li .info-holder .quantity,
+header nav .cart-dropdown ul li .info-holder .amount {
   font-size: 14px;
   color: #afafaf;
 }
@@ -461,7 +462,7 @@ header nav .cart-dropdown .cart-bottom .cart-buttons .button {
   position: relative;
   width: 49.1%;
   font-size: 11px;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   border: 1px solid transparent;
   cursor: pointer;
@@ -580,7 +581,7 @@ main #slider .slideshow .item span {
   position: absolute;
   top: 37%;
   display: none;
-  font-family: "Playfair Display",serif;
+  font-family: "Playfair Display", serif;
   font-size: 20px;
 }
 
@@ -611,7 +612,7 @@ main #shop .categories li {
   cursor: pointer;
   float: left;
   margin-right: 25px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   letter-spacing: 0.1em;
   font-weight: 500;
@@ -708,7 +709,7 @@ main #shop .types .item .image .expired {
   height: 30px;
   background: #0e0000;
   color: white;
-  font-family: "Lora",serif;
+  font-family: "Lora", serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 1px;
@@ -728,7 +729,7 @@ main #shop .types .item .image .saleproduct {
   height: 30px;
   background: #fcfcfc;
   color: #030101;
-  font-family: "Lora",serif;
+  font-family: "Lora", serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 1px;
@@ -824,14 +825,17 @@ main .valentine .quote .context p {
   margin-left: 5px;
   font-size: 16px;
   opacity: 50%;
-  font-family: 'Lora',serif;
+  font-family: 'Lora', serif;
 }
 
-main .valentine .quote .hearticons .savethe, main .valentine .quote .hearticons .world {
+main .valentine .quote .hearticons .savethe,
+main .valentine .quote .hearticons .world {
   margin-top: 10px;
 }
 
-main .valentine .quote .hearticons .loveto span, main .valentine .quote .hearticons .savethe span, main .valentine .quote .hearticons .world span {
+main .valentine .quote .hearticons .loveto span,
+main .valentine .quote .hearticons .savethe span,
+main .valentine .quote .hearticons .world span {
   margin-left: 5px;
   font-size: 16px;
   opacity: 50%;
@@ -1642,5 +1646,123 @@ main #product .container .row .aside .product-meta .tagged-as {
   font-size: 12px;
   line-height: 24px;
   font-family: "Montserrat", sans-serif;
+}
+
+main #header {
+  background-color: #fafaf9;
+}
+
+main #header .container .row {
+  height: 228px;
+}
+
+main #header .container .row .text {
+  height: 210px;
+  padding: 75px 110px;
+}
+
+main #header .container .row .text p {
+  margin: 0;
+  color: #0e0e0e;
+  font-size: 50px;
+  line-height: 1.32em;
+  font-family: "Playfair Display", serif;
+}
+
+main #header .container .row .text .header-addit-text {
+  margin: 8px 0 0;
+  font-family: "Lora", serif;
+  font-size: 17px;
+  font-style: italic;
+  letter-spacing: 0;
+  color: #6d6a6a;
+}
+
+main #progress-bar {
+  padding: 8% 0;
+}
+
+main #progress-bar .left, main #progress-bar .right, main #progress-bar .bottom {
+  margin: 8% 0;
+}
+
+main #progress-bar .left .hidden-background, main #progress-bar .right .hidden-background, main #progress-bar .bottom .hidden-background {
+  height: 4px;
+  background-color: grey;
+  opacity: 40%;
+  position: absolute;
+  width: 636px;
+  z-index: -1;
+}
+
+main #progress-bar .left .growing .text-percentage, main #progress-bar .left .watering .text-percentage, main #progress-bar .left .furtilizing .text-percentage, main #progress-bar .right .growing .text-percentage, main #progress-bar .right .watering .text-percentage, main #progress-bar .right .furtilizing .text-percentage, main #progress-bar .bottom .growing .text-percentage, main #progress-bar .bottom .watering .text-percentage, main #progress-bar .bottom .furtilizing .text-percentage {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #progress-bar .left .growing .text-percentage .text span, main #progress-bar .left .watering .text-percentage .text span, main #progress-bar .left .furtilizing .text-percentage .text span, main #progress-bar .right .growing .text-percentage .text span, main #progress-bar .right .watering .text-percentage .text span, main #progress-bar .right .furtilizing .text-percentage .text span, main #progress-bar .bottom .growing .text-percentage .text span, main #progress-bar .bottom .watering .text-percentage .text span, main #progress-bar .bottom .furtilizing .text-percentage .text span {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+
+main #progress-bar .left .growing .text-percentage .percentage span, main #progress-bar .left .watering .text-percentage .percentage span, main #progress-bar .left .furtilizing .text-percentage .percentage span, main #progress-bar .right .growing .text-percentage .percentage span, main #progress-bar .right .watering .text-percentage .percentage span, main #progress-bar .right .furtilizing .text-percentage .percentage span, main #progress-bar .bottom .growing .text-percentage .percentage span, main #progress-bar .bottom .watering .text-percentage .percentage span, main #progress-bar .bottom .furtilizing .text-percentage .percentage span {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+
+main #progress-bar .left .growing .background-growing, main #progress-bar .left .watering .background-growing, main #progress-bar .left .furtilizing .background-growing, main #progress-bar .right .growing .background-growing, main #progress-bar .right .watering .background-growing, main #progress-bar .right .furtilizing .background-growing, main #progress-bar .bottom .growing .background-growing, main #progress-bar .bottom .watering .background-growing, main #progress-bar .bottom .furtilizing .background-growing {
+  position: relative;
+  margin-top: 5px;
+  height: 4px;
+  background: -webkit-gradient(linear, left top, right top, from(#40e0d0), color-stop(#ff8c00), to(#ff0080));
+  background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  -webkit-transition: 1.6s;
+  transition: 1.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+          transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  width: 0%;
+}
+
+main #progress-bar .left .growing .background-watering, main #progress-bar .left .watering .background-watering, main #progress-bar .left .furtilizing .background-watering, main #progress-bar .right .growing .background-watering, main #progress-bar .right .watering .background-watering, main #progress-bar .right .furtilizing .background-watering, main #progress-bar .bottom .growing .background-watering, main #progress-bar .bottom .watering .background-watering, main #progress-bar .bottom .furtilizing .background-watering {
+  position: relative;
+  margin-top: 5px;
+  height: 4px;
+  background: -webkit-gradient(linear, left top, right top, from(#3494e6), to(#ec6ead));
+  background: linear-gradient(to right, #3494e6, #ec6ead);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+          transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  width: 0%;
+}
+
+main #progress-bar .left .growing .background-furtilizing, main #progress-bar .left .watering .background-furtilizing, main #progress-bar .left .furtilizing .background-furtilizing, main #progress-bar .right .growing .background-furtilizing, main #progress-bar .right .watering .background-furtilizing, main #progress-bar .right .furtilizing .background-furtilizing, main #progress-bar .bottom .growing .background-furtilizing, main #progress-bar .bottom .watering .background-furtilizing, main #progress-bar .bottom .furtilizing .background-furtilizing {
+  position: relative;
+  margin-top: 5px;
+  height: 4px;
+  background: -webkit-gradient(linear, left top, right top, from(#ff0080), color-stop(#ff8c00), to(#40e0d0));
+  background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+          transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  width: 0%;
+}
+
+main #progress-bar .left, main #progress-bar .right, main #progress-bar .bottom {
+  padding: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  main #progress-bar .bottom {
+    overflow: hidden;
+  }
 }
 /*# sourceMappingURL=Flower-Shop-Design.css.map */
