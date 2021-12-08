@@ -7,12 +7,12 @@
 }
 
 *::-moz-selection {
-  background: #f34f3f;
+  background: #fa4534;
   color: white;
 }
 
 *::selection {
-  background: #f34f3f;
+  background: #fa4534;
   color: white;
 }
 
@@ -44,7 +44,7 @@ html {
   bottom: 25px;
   line-height: 40px;
   z-index: 10000;
-  background: #f34f3f;
+  background: #fa4534;
   text-align: center;
   overflow: hidden;
   display: block;
@@ -402,9 +402,9 @@ header nav .cart-dropdown ul li .info-holder h6 {
   color: #1b1b1b;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  line-height: 2em;
+  line-height: 32px;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.6 px;
   text-transform: uppercase;
   display: block;
   margin: 0;
@@ -434,7 +434,7 @@ header nav .cart-dropdown ul li .info-holder .remove {
   right: 0;
   font-size: 15px;
   line-height: 1;
-  color: #f34f3f;
+  color: #fa4534;
 }
 
 header nav .cart-dropdown .cart-bottom {
@@ -469,7 +469,7 @@ header nav .cart-dropdown .cart-bottom .cart-buttons .button {
 }
 
 header nav .cart-dropdown .cart-bottom .cart-buttons .view-cart {
-  background-color: #f34f3f;
+  background-color: #fa4534;
 }
 
 header nav .cart-dropdown .cart-bottom .cart-buttons .checkout {
@@ -492,11 +492,24 @@ header .icons .total .price {
   font-family: 'Montserrat', sans-serif;
 }
 
+.button {
+  display: inline-block;
+  background-color: #fa4534;
+  font-weight: 500;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 35px;
+  border-radius: 0px;
+  position: relative;
+  width: 100%;
+  font-size: 11px;
+  font-family: "Montserrat",sans-serif;
+  color: #fff;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
 main #slider {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   background-color: #f3f3f3;
   position: relative;
   min-height: 488px;
@@ -605,7 +618,7 @@ main #shop .categories {
 }
 
 main #shop .categories .activeCategory {
-  color: #f34f3f;
+  color: #fa4534;
 }
 
 main #shop .categories li {
@@ -614,7 +627,7 @@ main #shop .categories li {
   margin-right: 25px;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.6px;
   font-weight: 500;
 }
 
@@ -626,7 +639,7 @@ main #shop .categories li a {
 }
 
 main #shop .categories li a:hover {
-  color: #f34f3f;
+  color: #fa4534;
 }
 
 main #shop .types {
@@ -641,12 +654,12 @@ main #shop .types .activetype {
   display: block;
 }
 
-main #shop .types .item {
+main #shop .types .flower {
   overflow: hidden;
   margin-top: 15px;
 }
 
-main #shop .types .item .text {
+main #shop .types .flower .text {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 24px;
@@ -657,38 +670,38 @@ main #shop .types .item .text {
   width: 295px;
 }
 
-main #shop .types .item .text .name {
+main #shop .types .flower .text .name {
   font-size: 12px;
 }
 
-main #shop .types .item .text .action {
-  margin-left: -400px;
+main #shop .types .flower .text .action {
+  margin-left: -300px;
   overflow: hidden;
   color: #afafaf;
   font-size: 12px;
   position: absolute;
   cursor: pointer;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
 }
 
-main #shop .types .item .text .action:hover {
-  color: #f34f3f;
+main #shop .types .flower .text .action:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  color: #fa4534;
 }
 
-main #shop .types .item .text .price {
+main #shop .types .flower .text .price {
   color: #afafaf;
   font-size: 12px;
 }
 
-main #shop .types .item .image {
+main #shop .types .flower .image {
   margin-left: 15px;
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-main #shop .types .item .image img {
+main #shop .types .flower .image img {
   width: 100%;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
@@ -696,12 +709,12 @@ main #shop .types .item .image img {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-main #shop .types .item .image img:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+main #shop .types .flower .image img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-main #shop .types .item .image .expired {
+main #shop .types .flower .image .expired {
   position: absolute;
   display: block;
   top: 0;
@@ -721,7 +734,7 @@ main #shop .types .item .image .expired {
   z-index: 100;
 }
 
-main #shop .types .item .image .saleproduct {
+main #shop .types .flower .image .saleproduct {
   position: absolute;
   display: block;
   top: 0;
@@ -848,7 +861,7 @@ main #team {
 
 main #team .container .text .header {
   font-size: 38px;
-  line-height: 1.447em;
+  line-height: -23.15px;
   color: #2b2b2b;
   font-family: "Playfair Display", serif;
 }
@@ -867,9 +880,9 @@ main #team .container .row .member .name {
   color: #1b1b1b;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  line-height: 2em;
+  line-height: 32px;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.6 px;
   margin-top: 20px;
   text-align: center;
   margin-right: 30px;
@@ -898,7 +911,7 @@ main #subscribe-field .container .text {
 
 main #subscribe-field .container .text p {
   font-size: 30px;
-  line-height: 1.4em;
+  line-height: 22.4px;
   font-family: "Playfair Display", serif;
   color: white;
 }
@@ -932,7 +945,7 @@ main #subscribe-field .container .row .subscribe .button {
   background-color: #ff3d2a;
   outline: 0;
   font-size: 12px;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.6 px;
   font-family: "Montserrat", sans-serif;
   padding: 0px 42px;
   border: 1px solid transparent;
@@ -951,7 +964,7 @@ main #blog {
 
 main #blog .container .text .header {
   font-size: 38px;
-  line-height: 1.447em;
+  line-height: -23.15px;
   color: #2b2b2b;
   font-family: "Playfair Display", serif;
   margin: 0 0 19px;
@@ -998,10 +1011,10 @@ main #blog .container .row .item .image .date {
 }
 
 main #blog .container .row .item .image .date p {
-  letter-spacing: 0.15em;
+  letter-spacing: 2.4px;
   color: #000;
   font-weight: 500;
-  line-height: 1em;
+  line-height: 16px;
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
@@ -1010,12 +1023,12 @@ main #blog .container .row .item .image .date p {
 }
 
 main #blog .container .row .item .image .date p:hover {
-  color: #f34f3f;
+  color: #fa4534;
 }
 
 main #blog .container .row .item .title {
   font-size: 22px;
-  line-height: 1.363em;
+  line-height: 21.80px;
   margin: 19px 0 3px;
   color: #2b2b2b;
   font-family: "Playfair Display", serif;
@@ -1032,9 +1045,90 @@ main #blog .container .row .item .info {
   text-align: center;
 }
 
-main #carousel {
-  background-color: #eceae1;
-  margin-top: 80px;
+main #carousel .container .owl-carousel .item {
+  margin-left: 50px;
+}
+
+main #carousel .container .owl-carousel .item .test-img {
+  margin-left: 80px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  max-width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: bottom;
+      -ms-flex-pack: bottom;
+          justify-content: bottom;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #carousel .container .owl-carousel .item .test-text {
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1.6 px;
+  margin-top: 20px;
+  text-align: center;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main #carousel .container .owl-carousel .item .author-name {
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1.6 px;
+  margin-top: 20px;
+  text-align: center;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main #carousel .container .owl-carousel .item .author-job {
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1.6 px;
+  margin-top: 20px;
+  text-align: center;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 main #footer {
@@ -1049,9 +1143,9 @@ main #footer footer .container .upper-row ul .footer-top {
   color: #000;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  line-height: 2em;
+  line-height: 32px;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.6 px;
   margin-bottom: 23px;
 }
 
@@ -1067,7 +1161,7 @@ main #footer footer .container .upper-row ul .footer-context {
 }
 
 main #footer footer .container .upper-row ul .footer-context:hover {
-  color: #f34f3f;
+  color: #fa4534;
   opacity: 1;
 }
 
@@ -1094,7 +1188,7 @@ main #footer footer .container .lower-row .byme p span {
 }
 
 main #footer footer .container .lower-row .byme p span:hover {
-  color: #f34f3f;
+  color: #fa4534;
 }
 
 main #footer footer .container .lower-row .creditcard {
@@ -1114,7 +1208,7 @@ main #footer footer .container .lower-row .socialmedia {
 main #footer footer .container .lower-row .socialmedia span {
   color: #afafaf;
   font-size: 10px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.32px;
   line-height: 24px;
   font-family: "Montserrat", sans-serif;
   -webkit-transition: color 0.2s ease-out;
@@ -1127,7 +1221,7 @@ main #footer footer .container .lower-row .socialmedia span:first-child {
 }
 
 main #footer footer .container .lower-row .socialmedia span:hover {
-  color: #f34f3f;
+  color: #fa4534;
 }
 
 main #title {
@@ -1147,7 +1241,7 @@ main #title .container-fluid .row .text p {
   margin: 0;
   color: #0e0e0e;
   font-size: 50px;
-  line-height: 1.32em;
+  line-height: 1.332px;
   font-family: "Playfair Display", serif;
 }
 
@@ -1181,7 +1275,7 @@ main #tabs .container .upper-row .tab1 .option-header .header {
 }
 
 main #tabs .container .upper-row .tab1 .option-header .header:hover p {
-  color: #f34f3f;
+  color: #fa4534;
 }
 
 main #tabs .container .upper-row .tab1 .option-header .header p {
@@ -1192,13 +1286,13 @@ main #tabs .container .upper-row .tab1 .option-header .header p {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.6 px;
   -webkit-transition: color 0.2s ease-out;
   transition: color 0.2s ease-out;
 }
 
 main #tabs .container .upper-row .tab1 .option-header .active-header1 {
-  background: #f34f3f;
+  background: #fa4534;
 }
 
 main #tabs .container .upper-row .tab1 .option-header .active-header1 p {
@@ -1214,7 +1308,7 @@ main #tabs .container .upper-row .tab1 .option-context .context {
 
 main #tabs .container .upper-row .tab1 .option-context .context p {
   margin: 0;
-  line-height: 1.6em;
+  line-height: 26px;
   font-family: "Lora", serif;
   color: #6d6a6a;
   font-size: 15px;
@@ -1244,7 +1338,7 @@ main #tabs .container .upper-row .tab2 .option-header .header {
 }
 
 main #tabs .container .upper-row .tab2 .option-header .header:hover {
-  background: #f34f3f;
+  background: #fa4534;
 }
 
 main #tabs .container .upper-row .tab2 .option-header .header:hover p {
@@ -1259,13 +1353,13 @@ main #tabs .container .upper-row .tab2 .option-header .header p {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.32px;
   -webkit-transition: color 0.2s ease-out;
   transition: color 0.2s ease-out;
 }
 
 main #tabs .container .upper-row .tab2 .option-header .active-header1 {
-  background: #f34f3f;
+  background: #fa4534;
 }
 
 main #tabs .container .upper-row .tab2 .option-header .active-header1 p {
@@ -1281,7 +1375,7 @@ main #tabs .container .upper-row .tab2 .option-context .context {
 
 main #tabs .container .upper-row .tab2 .option-context .context p {
   margin: 0;
-  line-height: 1.6em;
+  line-height: 26px;
   font-family: "Lora", serif;
   color: #6d6a6a;
   font-size: 15px;
@@ -1319,15 +1413,15 @@ main #tabs .container .middle-row .tab3 .option-header .header p {
   color: #1b1b1b;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  line-height: 2em;
+  line-height: 32px;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.6 px;
   -webkit-transition: color 0.2s ease-out;
   transition: color 0.2s ease-out;
 }
 
 main #tabs .container .middle-row .tab3 .option-header .active-header2 p {
-  color: #f34f3f;
+  color: #fa4534;
 }
 
 main #tabs .container .middle-row .tab3 .option-context .context {
@@ -1338,7 +1432,7 @@ main #tabs .container .middle-row .tab3 .option-context .context {
 
 main #tabs .container .middle-row .tab3 .option-context .context p {
   margin: 0;
-  line-height: 1.6em;
+  line-height: 26px;
   font-family: "Lora", serif;
   font-size: 15px;
   color: #6d6a6a;
@@ -1384,7 +1478,7 @@ main #tabs .container .lower-row .tab4 .option-header .header {
 }
 
 main #tabs .container .lower-row .tab4 .option-header .header:hover {
-  background: #f34f3f;
+  background: #fa4534;
 }
 
 main #tabs .container .lower-row .tab4 .option-header .header:hover p {
@@ -1397,15 +1491,15 @@ main #tabs .container .lower-row .tab4 .option-header .header p {
   color: #1b1b1b;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  line-height: 2em;
+  line-height: 32px;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.6 px;
   -webkit-transition: color 0.2s ease-out;
   transition: color 0.2s ease-out;
 }
 
 main #tabs .container .lower-row .tab4 .option-header .active-header1 {
-  background: #f34f3f;
+  background: #fa4534;
 }
 
 main #tabs .container .lower-row .tab4 .option-header .active-header1 p {
@@ -1424,7 +1518,7 @@ main #tabs .container .lower-row .tab4 .option-context .context {
 
 main #tabs .container .lower-row .tab4 .option-context .context p {
   margin: 0;
-  line-height: 1.6em;
+  line-height: 26px;
   font-family: "Lora", serif;
   font-size: 15px;
   color: #6d6a6a;
@@ -1492,7 +1586,7 @@ main #product .container .row .aside {
 main #product .container .row .aside .product-title {
   margin: 0;
   font-size: 38px;
-  line-height: 1.447em;
+  line-height: -23.15px;
   color: #2b2b2b;
   font-family: "Playfair Display", serif;
 }
@@ -1513,7 +1607,7 @@ main #product .container .row .aside .product-description {
 
 main #product .container .row .aside .product-description p {
   margin: 0;
-  line-height: 1.6em;
+  line-height: 26px;
   font-family: "Lora", serif;
   font-size: 15px;
   color: #6d6a6a;
@@ -1532,7 +1626,7 @@ main #product .container .row .aside .product-shop .quantity-input-field-holder 
   line-height: 50px;
   height: 51px;
   padding: 0 22px;
-  margin: 0 -0.3em 0 0;
+  margin: 0 -4.8px 0 0;
 }
 
 main #product .container .row .aside .product-shop .quantity-input-field-holder .quantity-label {
@@ -1556,7 +1650,7 @@ main #product .container .row .aside .product-shop .quantity-input-field-holder 
 }
 
 main #product .container .row .aside .product-shop .quantity-input-field-holder .quantity-arrow-left i:hover {
-  color: #f34f3f;
+  color: #fa4534;
 }
 
 main #product .container .row .aside .product-shop .quantity-input-field-holder .quantity-input-field {
@@ -1597,7 +1691,7 @@ main #product .container .row .aside .product-shop .quantity-input-field-holder 
 }
 
 main #product .container .row .aside .product-shop .quantity-input-field-holder .quantity-arrow-right i:hover {
-  color: #f34f3f;
+  color: #fa4534;
 }
 
 main #product .container .row .aside .product-shop .product-add-to-cart-btn {
@@ -1606,8 +1700,8 @@ main #product .container .row .aside .product-shop .product-add-to-cart-btn {
   outline: 0;
   border: 0;
   font-size: 12px;
-  line-height: 1.833em;
-  letter-spacing: 0.1em;
+  line-height: 29.32px;
+  letter-spacing: 1.6 px;
   font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: 500;
@@ -1665,7 +1759,7 @@ main #header .container .row .text p {
   margin: 0;
   color: #0e0e0e;
   font-size: 50px;
-  line-height: 1.32em;
+  line-height: 1.332px;
   font-family: "Playfair Display", serif;
 }
 
@@ -1764,5 +1858,309 @@ main #progress-bar .left, main #progress-bar .right, main #progress-bar .bottom 
   main #progress-bar .bottom {
     overflow: hidden;
   }
+}
+
+#accordion .container .upper-low {
+  padding: 100px 0;
+}
+
+#accordion .container .upper-low .accordion1 .accHeadd .head {
+  padding: 13px 20px 13px 40px;
+  margin: 15px 0 0;
+  border: 1px solid #eee;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+#accordion .container .upper-low .accordion1 .accHeadd .head:hover {
+  background: #fa4534;
+}
+
+#accordion .container .upper-low .accordion1 .accHeadd .head:hover .symbol {
+  color: white;
+}
+
+#accordion .container .upper-low .accordion1 .accHeadd .head:hover .headTitle {
+  color: white;
+}
+
+#accordion .container .upper-low .accordion1 .accHeadd .head .symbol {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 10px;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+#accordion .container .upper-low .accordion1 .accHeadd .head .headTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+#accordion .container .upper-low .accordion1 .accHeadd .text {
+  padding: 34px 0 20px;
+  border: none;
+}
+
+#accordion .container .upper-low .accordion1 .accHeadd .text p {
+  margin: 0;
+  color: #6d6a6a;
+  line-height: 26px;
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+
+#accordion .container .upper-low .accordion1 .accHeadd .inactive {
+  display: none;
+}
+
+#accordion .container .upper-low .accordion1 .accHeadd .active-head1 {
+  background: #fa4534;
+}
+
+#accordion .container .upper-low .accordion1 .accHeadd .active-head1 .symbol {
+  color: white;
+}
+
+#accordion .container .upper-low .accordion1 .accHeadd .active-head1 .headTitle {
+  color: white;
+}
+
+#accordion .container .upper-low .accordion2 .accHeadd .head {
+  padding: 13px 20px 13px 40px;
+  margin: 15px 0 0;
+  border: 1px solid #eee;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+#accordion .container .upper-low .accordion2 .accHeadd .head:hover {
+  background: #fa4534;
+}
+
+#accordion .container .upper-low .accordion2 .accHeadd .head:hover .symbol {
+  color: white;
+}
+
+#accordion .container .upper-low .accordion2 .accHeadd .head:hover .headTitle {
+  color: white;
+}
+
+#accordion .container .upper-low .accordion2 .accHeadd .head .symbol {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 10px;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+#accordion .container .upper-low .accordion2 .accHeadd .head .headTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+#accordion .container .upper-low .accordion2 .accHeadd .text {
+  padding: 34px 0 20px;
+  border: none;
+}
+
+#accordion .container .upper-low .accordion2 .accHeadd .text p {
+  margin: 0;
+  color: #6d6a6a;
+  line-height: 26px;
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+
+#accordion .container .upper-low .accordion2 .accHeadd .inactive {
+  display: none;
+}
+
+#accordion .container .upper-low .accordion2 .accHeadd .active-head1 {
+  background: #fa4534;
+}
+
+#accordion .container .upper-low .accordion2 .accHeadd .active-head1 .chevron {
+  color: white;
+}
+
+#accordion .container .upper-low .accordion2 .accHeadd .active-head1 .headTitle {
+  color: white;
+}
+
+#accordion .container .lower-row {
+  padding: 100px 0;
+}
+
+#accordion .container .lower-row .accordion3 .accHeadd .head {
+  padding: 13px 20px 13px 40px;
+  margin: 15px 0 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  position: relative;
+}
+
+#accordion .container .lower-row .accordion3 .accHeadd .head:hover .symbol {
+  color: #fa4534;
+}
+
+#accordion .container .lower-row .accordion3 .accHeadd .head:hover .headTitle {
+  color: #fa4534;
+}
+
+#accordion .container .lower-row .accordion3 .accHeadd .head .chevron {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 10px;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+#accordion .container .lower-row .accordion3 .accHeadd .head .headTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+#accordion .container .lower-row .accordion3 .accHeadd .text {
+  padding: 34px 0 20px;
+  border: none;
+}
+
+#accordion .container .lower-row .accordion3 .accHeadd .text p {
+  margin: 0;
+  color: #6d6a6a;
+  line-height: 26px;
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+
+#accordion .container .lower-row .accordion3 .accHeadd .inactive {
+  display: none;
+}
+
+#accordion .container .lower-row .accordion3 .accHeadd .active-head2 .symbol {
+  color: #fa4534;
+}
+
+#accordion .container .lower-row .accordion3 .accHeadd .active-head2 .headTitle {
+  color: #fa4534;
+}
+
+#accordion .container .lower-row .accordion4 .accHeadd .head {
+  padding: 13px 20px 13px 40px;
+  margin: 15px 0 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  position: relative;
+}
+
+#accordion .container .lower-row .accordion4 .accHeadd .head:hover .symbol {
+  color: #fa4534;
+}
+
+#accordion .container .lower-row .accordion4 .accHeadd .head:hover .headTitle {
+  color: #fa4534;
+}
+
+#accordion .container .lower-row .accordion4 .accHeadd .head .symbol {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 10px;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+#accordion .container .lower-row .accordion4 .accHeadd .head .headTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+#accordion .container .lower-row .accordion4 .accHeadd .text {
+  padding: 34px 0 20px;
+  border: none;
+}
+
+#accordion .container .lower-row .accordion4 .accHeadd .text p {
+  margin: 0;
+  color: #6d6a6a;
+  line-height: 26px;
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+
+#accordion .container .lower-row .accordion4 .accHeadd .inactive {
+  display: none;
+}
+
+#accordion .container .lower-row .accordion4 .accHeadd .active-head2 .symbol {
+  color: #fa4534;
+}
+
+#accordion .container .lower-row .accordion4 .accHeadd .active-head2 .headTitle {
+  color: #fa4534;
 }
 /*# sourceMappingURL=Flower-Shop-Design.css.map */

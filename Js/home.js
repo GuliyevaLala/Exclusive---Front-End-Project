@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    
+
+
 
 
     $('.owl-carousel').owlCarousel({
@@ -7,13 +10,13 @@ $(document).ready(function () {
         nav:true,
         responsive:{
             0:{
-                testimonial:1
+                items:1
             },
             600:{
-                testimonial:2
+                items:2
             },
             1000:{
-                testimonial:3
+                items:3
             }
         }
     })
@@ -77,7 +80,7 @@ let types = document.querySelectorAll("#shop .types .type");
         }
     }
 
-    $('.item').hover(function () {
+    $('.flower').hover(function () {
         let text = $(this).children().last();
         text.children().eq(2).stop(true, true).animate({ "margin-right": "-400px" });
         text.children().eq(1).stop(true, true).animate({ "margin-left": "107" });
