@@ -76,106 +76,6 @@ a {
   text-decoration: underline !important;
 }
 
-.searchIcon {
-  cursor: pointer;
-  font-size: 13px;
-  margin-top: 25px;
-  margin-left: 8px;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  font-weight: 400;
-}
-
-.searchIcon:hover {
-  color: #070706;
-}
-
-.search-box {
-  top: 94% !important;
-  right: 74% !important;
-  position: absolute !important;
-  z-index: 1111111111 !important;
-}
-
-.search-box #search-box {
-  padding: 10px;
-  background-color: white;
-  border: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-}
-
-.search-box #search-box input::-webkit-input-placeholder {
-  color: red;
-}
-
-.search-box #search-box input:-moz-placeholder {
-  color: red;
-}
-
-.search-box a {
-  padding: 10px;
-  position: absolute;
-  right: 18px;
-  color: #b5b5b5;
-  background-color: transparent;
-  border: none;
-}
-
-.search-box a:hover {
-  color: black;
-}
-
-.search-box a i {
-  color: #b5b5b5;
-  font-size: 16px;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.cartdiv {
-  margin-top: -17px;
-}
-
-.cartdiv .cart {
-  margin-top: -45px;
-  text-decoration: none;
-  letter-spacing: 1.6px;
-  color: #970e0e;
-}
-
-.cartdiv .cart:hover {
-  color: black;
-}
-
-.cartdiv .cart .bag-icon i {
-  font-size: 20px;
-  position: relative;
-  margin-top: 20px;
-  margin-left: 30px;
-}
-
-.cartdiv .cart .bag-icon i sup {
-  border-radius: 50%;
-  background: #ec4435;
-  width: 12px;
-  height: 13px;
-  position: absolute;
-  top: -3px;
-  right: -7px;
-  z-index: 12;
-  font-size: 10px;
-  color: white;
-}
-
-.cartdiv .cart .bag-icon i sup p {
-  position: absolute;
-  top: 6px;
-  left: 3px;
-}
-
 header {
   height: 115px;
   background-color: #0e0d0d;
@@ -338,129 +238,180 @@ header nav .navigator .main:hover .option {
   display: block;
 }
 
-header nav .cart-dropdown {
+#icons .search .search-icon i {
+  cursor: pointer;
+  font-size: 19px;
+  margin-top: 40px;
+  margin-left: 15px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#icons .search .search-icon i:hover {
+  color: #ec4435;
+}
+
+#icons .search .cart {
+  text-decoration: none;
+  color: black;
   position: relative;
-  z-index: 999999;
-  top: 100%;
-  width: 245px;
-  margin-left: -110px;
-  background-color: #fff;
-  border: 1px solid #e8e8e8;
-  text-align: left;
-  z-index: 1000;
-  min-height: 0px;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  height: 115px;
 }
 
-header nav .cart-dropdown ul {
-  margin: 23px 20px;
-}
-
-header nav .cart-dropdown ul p {
-  color: #737373;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  border-bottom: 0;
-  padding: 15px 0;
-}
-
-header nav .cart-dropdown ul li {
+#icons .search .cart .bag-icon i {
+  font-size: 20px;
   position: relative;
-  display: table;
-  height: 100%;
-  width: 100%;
-  padding: 0 0 15px;
+  margin-top: 44px;
+  margin-left: 25px;
 }
 
-header nav .cart-dropdown ul li .image-holder {
-  display: inline-block;
-  position: relative;
-  display: table-cell;
-  height: 100%;
-  width: 50px;
-  vertical-align: top;
-}
-
-header nav .cart-dropdown ul li .image-holder img {
-  width: 50px;
-}
-
-header nav .cart-dropdown ul li .info-holder {
-  display: inline-block;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  vertical-align: middle;
-  vertical-align: top;
-  padding: 0 25px;
-}
-
-header nav .cart-dropdown ul li .info-holder h6 {
-  color: #1b1b1b;
-  font-family: 'Montserrat', sans-serif;
+#icons .search .cart .bag-icon i sup {
+  border-radius: 50%;
+  background: #ec4435;
+  width: 14px;
+  height: 15px;
+  position: absolute;
+  top: -3px;
+  right: -7px;
+  z-index: 10;
   font-size: 12px;
-  line-height: 32px;
-  font-weight: 500;
-  letter-spacing: 1.6 px;
-  text-transform: uppercase;
-  display: block;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  line-height: 1;
+  color: #fdfafa;
 }
 
-header nav .cart-dropdown ul li .info-holder .quantity,
-header nav .cart-dropdown ul li .info-holder .amount {
-  font-size: 14px;
+#icons .search .cart .bag-icon i sup p {
+  position: absolute;
+  top: 6.8px;
+  left: 3.5px;
+}
+
+#icons .search .cart .bag-icon span {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+#icons .search .cart .bag-icon span .total-price {
+  margin-left: 0;
+}
+
+#icons .search .cart .cart-drop {
+  margin-top: -2px;
+  border-style: none;
+  position: absolute;
+  background: white;
+  z-index: 3000;
+  width: 246px;
+  cursor: auto;
+  display: none;
+}
+
+#icons .search .cart .cart-drop .cart-item {
+  padding: 35px 6px;
+  position: relative;
+  line-height: 1.9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+#icons .search .cart .cart-drop .cart-item .image {
+  padding-left: 10px;
+  width: 50px;
+  height: 100%;
+  float: left;
+}
+
+#icons .search .cart .cart-drop .cart-item .image img {
+  padding-top: 19px;
+  width: 100%;
+}
+
+#icons .search .cart .cart-drop .cart-item .info {
+  padding: 0 19px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#icons .search .cart .cart-drop .cart-item .info .name {
+  padding-top: 19px !important;
+  padding-top: -20px !important;
+  line-height: 1;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+#icons .search .cart .cart-drop .cart-item .info .quantity {
+  display: inline-block;
+  margin: 3px 0 0;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #afafaf;
+  padding-left: 11px;
+}
+
+#icons .search .cart .cart-drop .cart-item .info .quantity::after {
+  content: "X";
+  display: inline-block;
+  position: relative;
+  padding-left: 3px;
   color: #afafaf;
 }
 
-header nav .cart-dropdown ul li .info-holder .quantity:after {
-  content: " X";
+#icons .search .cart .cart-drop .cart-item .info .price {
+  display: inline-block;
+  margin: 0;
+  font-size: 12px;
+  color: #afafaf;
 }
 
-header nav .cart-dropdown ul li .info-holder .amount::before {
-  content: "$";
-}
-
-header nav .cart-dropdown ul li .info-holder .remove {
-  text-decoration: none;
+#icons .search .cart .cart-drop .cart-item .info .remove {
+  font-size: 12px;
+  color: #ec4435;
   position: absolute;
-  top: 12px;
-  right: 0;
-  font-size: 15px;
-  line-height: 1;
-  color: #fa4534;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
 }
 
-header nav .cart-dropdown .cart-bottom {
-  position: relative;
-  height: 100%;
+#icons .search .cart .subtotal {
   width: 100%;
-}
-
-header nav .cart-dropdown .cart-bottom .subtotal-holder .amount {
-  width: 60%;
-  display: inline-block;
   position: relative;
+  padding: 0px 21px 16px;
 }
 
-header nav .cart-dropdown .cart-bottom .cart-buttons .button {
+#icons .search .cart .subtotal .total {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #2b2b2b;
+  line-height: 20px;
+}
+
+#icons .search .cart .subtotal .amount {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #2b2b2b;
+  line-height: 20px;
+  float: right;
+}
+
+#icons .search .cart .buttons {
   display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 500;
   padding-top: 0;
   padding-bottom: 0;
   line-height: 35px;
   border-radius: 0px;
   position: relative;
-  width: 49.1%;
+  width: 48%;
   font-size: 11px;
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -468,45 +419,62 @@ header nav .cart-dropdown .cart-bottom .cart-buttons .button {
   cursor: pointer;
 }
 
-header nav .cart-dropdown .cart-bottom .cart-buttons .view-cart {
-  background-color: #fa4534;
-}
-
-header nav .cart-dropdown .cart-bottom .cart-buttons .checkout {
-  background-color: black;
-}
-
-header .icons {
-  margin-top: 0px;
-  z-index: 70;
-}
-
-header .icons .total {
-  margin-left: 5px;
-  font-size: 12px !important;
-  font-family: 'Montserrat', sans-serif;
-}
-
-header .icons .total .price {
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.button {
-  display: inline-block;
-  background-color: #fa4534;
+#icons .search .cart .buttons .view-cart {
+  margin-left: -32px;
+  margin-right: 30px;
+  font-family: "Montserrat", sans-serif;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 18px;
+  font-size: 9px;
   font-weight: 500;
-  padding-top: 0;
-  padding-bottom: 0;
-  line-height: 35px;
-  border-radius: 0px;
-  position: relative;
-  width: 100%;
-  font-size: 11px;
-  font-family: "Montserrat",sans-serif;
+  letter-spacing: 1px;
   color: #fff;
-  border: 1px solid transparent;
-  cursor: pointer;
+  background-color: #ec4435;
+  text-align: center;
+  border: 0;
+}
+
+#icons .search .cart .buttons .view-cart:hover {
+  background: #580808;
+}
+
+#icons .search .cart .buttons .checkout {
+  margin-right: -280px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #000;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 18px;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  border: 0;
+  display: inline;
+}
+
+#icons .search .cart .buttons .checkout:hover {
+  background: #b8abab;
+  color: black;
+}
+
+#icons .search .cart .empty-cart {
+  width: 100%;
+  position: relative;
+  margin: 23px 20px;
+  display: none;
+}
+
+#icons .search .cart .empty-cart p {
+  color: #686565;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  width: 100%;
+  line-height: 24px;
 }
 
 main #slider {
@@ -681,11 +649,11 @@ main #shop .types .flower .text .action {
   font-size: 12px;
   position: absolute;
   cursor: pointer;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 main #shop .types .flower .text .action:hover {
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
   color: #fa4534;
 }
 
@@ -1776,11 +1744,15 @@ main #progress-bar {
   padding: 8% 0;
 }
 
-main #progress-bar .left, main #progress-bar .right, main #progress-bar .bottom {
+main #progress-bar .left,
+main #progress-bar .right,
+main #progress-bar .bottom {
   margin: 8% 0;
 }
 
-main #progress-bar .left .hidden-background, main #progress-bar .right .hidden-background, main #progress-bar .bottom .hidden-background {
+main #progress-bar .left .hidden-background,
+main #progress-bar .right .hidden-background,
+main #progress-bar .bottom .hidden-background {
   height: 4px;
   background-color: grey;
   opacity: 40%;
@@ -1789,7 +1761,15 @@ main #progress-bar .left .hidden-background, main #progress-bar .right .hidden-b
   z-index: -1;
 }
 
-main #progress-bar .left .growing .text-percentage, main #progress-bar .left .watering .text-percentage, main #progress-bar .left .furtilizing .text-percentage, main #progress-bar .right .growing .text-percentage, main #progress-bar .right .watering .text-percentage, main #progress-bar .right .furtilizing .text-percentage, main #progress-bar .bottom .growing .text-percentage, main #progress-bar .bottom .watering .text-percentage, main #progress-bar .bottom .furtilizing .text-percentage {
+main #progress-bar .left .growing .text-percentage,
+main #progress-bar .left .watering .text-percentage,
+main #progress-bar .left .furtilizing .text-percentage,
+main #progress-bar .right .growing .text-percentage,
+main #progress-bar .right .watering .text-percentage,
+main #progress-bar .right .furtilizing .text-percentage,
+main #progress-bar .bottom .growing .text-percentage,
+main #progress-bar .bottom .watering .text-percentage,
+main #progress-bar .bottom .furtilizing .text-percentage {
   margin-bottom: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1799,19 +1779,43 @@ main #progress-bar .left .growing .text-percentage, main #progress-bar .left .wa
           justify-content: space-between;
 }
 
-main #progress-bar .left .growing .text-percentage .text span, main #progress-bar .left .watering .text-percentage .text span, main #progress-bar .left .furtilizing .text-percentage .text span, main #progress-bar .right .growing .text-percentage .text span, main #progress-bar .right .watering .text-percentage .text span, main #progress-bar .right .furtilizing .text-percentage .text span, main #progress-bar .bottom .growing .text-percentage .text span, main #progress-bar .bottom .watering .text-percentage .text span, main #progress-bar .bottom .furtilizing .text-percentage .text span {
+main #progress-bar .left .growing .text-percentage .text span,
+main #progress-bar .left .watering .text-percentage .text span,
+main #progress-bar .left .furtilizing .text-percentage .text span,
+main #progress-bar .right .growing .text-percentage .text span,
+main #progress-bar .right .watering .text-percentage .text span,
+main #progress-bar .right .furtilizing .text-percentage .text span,
+main #progress-bar .bottom .growing .text-percentage .text span,
+main #progress-bar .bottom .watering .text-percentage .text span,
+main #progress-bar .bottom .furtilizing .text-percentage .text span {
   font-size: 20px;
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
 }
 
-main #progress-bar .left .growing .text-percentage .percentage span, main #progress-bar .left .watering .text-percentage .percentage span, main #progress-bar .left .furtilizing .text-percentage .percentage span, main #progress-bar .right .growing .text-percentage .percentage span, main #progress-bar .right .watering .text-percentage .percentage span, main #progress-bar .right .furtilizing .text-percentage .percentage span, main #progress-bar .bottom .growing .text-percentage .percentage span, main #progress-bar .bottom .watering .text-percentage .percentage span, main #progress-bar .bottom .furtilizing .text-percentage .percentage span {
+main #progress-bar .left .growing .text-percentage .percentage span,
+main #progress-bar .left .watering .text-percentage .percentage span,
+main #progress-bar .left .furtilizing .text-percentage .percentage span,
+main #progress-bar .right .growing .text-percentage .percentage span,
+main #progress-bar .right .watering .text-percentage .percentage span,
+main #progress-bar .right .furtilizing .text-percentage .percentage span,
+main #progress-bar .bottom .growing .text-percentage .percentage span,
+main #progress-bar .bottom .watering .text-percentage .percentage span,
+main #progress-bar .bottom .furtilizing .text-percentage .percentage span {
   font-size: 20px;
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
 }
 
-main #progress-bar .left .growing .background-growing, main #progress-bar .left .watering .background-growing, main #progress-bar .left .furtilizing .background-growing, main #progress-bar .right .growing .background-growing, main #progress-bar .right .watering .background-growing, main #progress-bar .right .furtilizing .background-growing, main #progress-bar .bottom .growing .background-growing, main #progress-bar .bottom .watering .background-growing, main #progress-bar .bottom .furtilizing .background-growing {
+main #progress-bar .left .growing .background-growing,
+main #progress-bar .left .watering .background-growing,
+main #progress-bar .left .furtilizing .background-growing,
+main #progress-bar .right .growing .background-growing,
+main #progress-bar .right .watering .background-growing,
+main #progress-bar .right .furtilizing .background-growing,
+main #progress-bar .bottom .growing .background-growing,
+main #progress-bar .bottom .watering .background-growing,
+main #progress-bar .bottom .furtilizing .background-growing {
   position: relative;
   margin-top: 5px;
   height: 4px;
@@ -1824,7 +1828,15 @@ main #progress-bar .left .growing .background-growing, main #progress-bar .left 
   width: 0%;
 }
 
-main #progress-bar .left .growing .background-watering, main #progress-bar .left .watering .background-watering, main #progress-bar .left .furtilizing .background-watering, main #progress-bar .right .growing .background-watering, main #progress-bar .right .watering .background-watering, main #progress-bar .right .furtilizing .background-watering, main #progress-bar .bottom .growing .background-watering, main #progress-bar .bottom .watering .background-watering, main #progress-bar .bottom .furtilizing .background-watering {
+main #progress-bar .left .growing .background-watering,
+main #progress-bar .left .watering .background-watering,
+main #progress-bar .left .furtilizing .background-watering,
+main #progress-bar .right .growing .background-watering,
+main #progress-bar .right .watering .background-watering,
+main #progress-bar .right .furtilizing .background-watering,
+main #progress-bar .bottom .growing .background-watering,
+main #progress-bar .bottom .watering .background-watering,
+main #progress-bar .bottom .furtilizing .background-watering {
   position: relative;
   margin-top: 5px;
   height: 4px;
@@ -1837,7 +1849,15 @@ main #progress-bar .left .growing .background-watering, main #progress-bar .left
   width: 0%;
 }
 
-main #progress-bar .left .growing .background-furtilizing, main #progress-bar .left .watering .background-furtilizing, main #progress-bar .left .furtilizing .background-furtilizing, main #progress-bar .right .growing .background-furtilizing, main #progress-bar .right .watering .background-furtilizing, main #progress-bar .right .furtilizing .background-furtilizing, main #progress-bar .bottom .growing .background-furtilizing, main #progress-bar .bottom .watering .background-furtilizing, main #progress-bar .bottom .furtilizing .background-furtilizing {
+main #progress-bar .left .growing .background-furtilizing,
+main #progress-bar .left .watering .background-furtilizing,
+main #progress-bar .left .furtilizing .background-furtilizing,
+main #progress-bar .right .growing .background-furtilizing,
+main #progress-bar .right .watering .background-furtilizing,
+main #progress-bar .right .furtilizing .background-furtilizing,
+main #progress-bar .bottom .growing .background-furtilizing,
+main #progress-bar .bottom .watering .background-furtilizing,
+main #progress-bar .bottom .furtilizing .background-furtilizing {
   position: relative;
   margin-top: 5px;
   height: 4px;
@@ -1850,7 +1870,9 @@ main #progress-bar .left .growing .background-furtilizing, main #progress-bar .l
   width: 0%;
 }
 
-main #progress-bar .left, main #progress-bar .right, main #progress-bar .bottom {
+main #progress-bar .left,
+main #progress-bar .right,
+main #progress-bar .bottom {
   padding: 10px;
 }
 

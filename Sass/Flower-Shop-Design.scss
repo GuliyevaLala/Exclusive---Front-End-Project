@@ -71,112 +71,6 @@ a {
   text-decoration: underline !important;
 }
 
-.searchIcon {
-
-  cursor: pointer;
-  font-size: 13px;
-  margin-top: 25px;
-  margin-left: 8px;
-  transition: color 0.5s;
-  transform: rotateY(180deg);
-  font-weight: 400;
-
-  &:hover {
-    color: #070706;
-
-  }
-}
-
-.search-box {
-  top: 94% !important;
-  right: 74% !important;
-  position: absolute !important;
-  z-index: 1111111111 !important;
-
-  #search-box {
-    padding: 10px;
-    background-color: white;
-    border: none;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-
-    input::-webkit-input-placeholder {
-      color: red;
-    }
-
-    input:-moz-placeholder {
-      color: red;
-    }
-  }
-
-  a {
-    padding: 10px;
-    position: absolute;
-    right: 18px;
-    color: #b5b5b5;
-
-    &:hover {
-      color: black;
-    }
-
-    i {
-      color: #b5b5b5;
-      font-size: 16px;
-      padding: 0 !important;
-      margin: 0 !important;
-    }
-
-    background-color: transparent;
-    border: none;
-  }
-}
-
-.cartdiv {
-  margin-top: -17px;
-
-  .cart {
-    margin-top: -45px;
-    text-decoration: none;
-    letter-spacing: 1.6px;
-    color: rgb(151, 14, 14);
-
-    &:hover {
-      color: black;
-    }
-
-    .bag-icon {
-      i {
-        font-size: 20px;
-        position: relative;
-        margin-top: 20px;
-        margin-left: 30px;
-
-        sup {
-          border-radius: 50%;
-          background: #ec4435;
-          width: 12px;
-          height: 13px;
-          position: absolute;
-          top: -3px;
-          right: -7px;
-          z-index: 12;
-          font-size: 10px;
-          color: white;
-
-          p {
-            position: absolute;
-            top: 6px;
-            left: 3px;
-          }
-        }
-      }
-    }
-
-  }
-}
-
-
-
 header {
   height: 115px;
   background-color: rgb(14, 13, 13);
@@ -241,6 +135,7 @@ header {
 header {
   nav {
     background-color: white;
+
     .navigator {
       background-color: white;
 
@@ -347,191 +242,258 @@ header {
 
     }
   }
-  
+
 }
 
-header {
-  nav {
-    .cart-dropdown {
+#icons {
+  .search {
+
+    .search-icon {
+      i {
+        cursor: pointer;
+        font-size: 19px;
+        margin-top: 40px;
+        margin-left: 15px;
+        transform: rotateY(180deg);
+
+        &:hover {
+          color: #ec4435;
+        }
+      }
+    }
+
+    .cart {
+      text-decoration: none;
+      color: black;
       position: relative;
-      z-index: 999999;
-      top: 100%;
-      width: 245px;
-      margin-left: -110px;
-      background-color: #fff;
-      border: 1px solid#e8e8e8;
-      text-align: left;
-      z-index: 1000;
-      min-height: 0px;
-      overflow: hidden;
-      box-sizing: border-box;
-     
+      height: 115px;
 
-      ul {
-        margin: 23px 20px;
+      .bag-icon {
+        i {
+          font-size: 20px;
+          position: relative;
+          margin-top: 44px;
+          margin-left: 25px;
 
-        p {
-          color: #737373;
-          font-size: 16px;
-          font-weight: 500;
-          font-family: "Montserrat", sans-serif;
-          border-bottom: 0;
-          padding: 15px 0;
+          sup {
+            border-radius: 50%;
+            background: #ec4435;
+            width: 14px;
+            height: 15px;
+            position: absolute;
+            top: -3px;
+            right: -7px;
+            z-index: 10;
+            font-size: 12px;
+            color: rgb(253, 250, 250);
 
+            p {
+              position: absolute;
+              top: 6.8px;
+              left: 3.5px;
+            }
+          }
         }
 
-        li {
-          position: relative;
-          display: table;
-          height: 100%;
-          width: 100%;
-          padding: 0 0 15px;
+        span {
+          font-family: "Montserrat", sans-serif;
+          margin-left: 5px;
+          font-size: 12px;
 
-          .image-holder {
-            display: inline-block;
-            position: relative;
-            display: table-cell;
-            height: 100%;
+          .total-price {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .cart-drop {
+        margin-top: -2px;
+        border-style: none;
+        position: absolute;
+        background: white;
+        z-index: 3000;
+        width: 246px;
+        cursor: auto;
+        display: none;
+
+        .cart-item {
+          padding: 35px 6px;
+          position: relative;
+          line-height: 1.9;
+          font-family: "Montserrat", sans-serif;
+          font-size: 15px;
+
+          .image {
+            padding-left: 10px;
             width: 50px;
-            vertical-align: top;
+            height: 100%;
+            float: left;
 
             img {
-              width: 50px;
+              padding-top: 19px;
+              width: 100%;
             }
           }
 
-          .info-holder {
-            display: inline-block;
-            position: relative;
+          .info {
+            padding: 0 19px;
             height: 100%;
             width: 100%;
-            vertical-align: middle;
-            vertical-align: top;
-            padding: 0 25px;
-            
+            position: relative;
 
-            h6 {
-              color: #1b1b1b;
-              font-family: 'Montserrat', sans-serif;
-              font-size: 12px;
-              line-height: 32px;
-              font-weight: 500;
-              letter-spacing: 1.6 px;
-              text-transform: uppercase;
-              display: block;
-              margin: 0;
-              box-sizing: border-box;
+            .name {
+              padding-top: 19px!important;
+              padding-top: -20px!important;
               line-height: 1;
+              color: #1b1b1b;
+              font-family: "Montserrat", sans-serif;
+              font-size: 12px;
+              font-weight: 500;
+              letter-spacing: 0.1em;
+              margin: 0;
+              padding-left: 40px;
+              cursor: pointer;
             }
 
-            .quantity,
-            .amount {
-              font-size: 14px;
+            .quantity {
+              display: inline-block;
+              margin: 3px 0 0;
+              font-size: 12px;
+              letter-spacing: 0.05em;
+              color: #afafaf;
+              padding-left: 11px;
+
+              &::after {
+                content: "X";
+                display: inline-block;
+                position: relative;
+                padding-left: 3px;
+                color: #afafaf;
+              }
+            }
+
+            .price {
+              display: inline-block;
+              margin: 0;
+              font-size: 12px;
               color: #afafaf;
             }
 
-            .quantity:after {
-              content: " X";
-            }
-
-            .amount::before {
-              content: "$";
-            }
-
             .remove {
-              text-decoration: none;
+              font-size: 12px;
+              color: #ec4435;
               position: absolute;
-              top: 12px;
-              right: 0;
-              font-size: 15px;
-              line-height: 1;
-              color: #fa4534;
+              top: 5px;
+              right: 5px;
+              cursor: pointer;
             }
           }
         }
-
       }
 
-      .cart-bottom {
-        position: relative;
-        height: 100%;
+      .subtotal {
         width: 100%;
+        position: relative;
+        padding: 0px 21px 16px;
 
-        .subtotal-holder {
-          .amount {
-            width: 60%;
-            display: inline-block;
-            position: relative;
+        .total {
+          font-family: "Montserrat", sans-serif;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.05em;
+          color: #2b2b2b;
+          line-height: 20px;
+        }
+
+        .amount {
+          font-family: "Montserrat", sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+          color: #2b2b2b;
+          line-height: 20px;
+          float: right;
+        }
+      }
+
+      .buttons {
+        display: inline-block;
+        font-weight: 500;
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: 35px;
+        border-radius: 0px;
+        position: relative;
+        width: 48%;
+        font-size: 11px;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        border: 1px solid transparent;
+        cursor: pointer;
+
+        .view-cart {
+          margin-left: -32px;
+          margin-right: 30px;
+          font-family: "Montserrat", sans-serif;
+          height: 40px;
+          line-height: 40px;
+          padding: 0 18px;
+          font-size: 9px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          color: #fff;
+          background-color: #ec4435;
+          text-align: center;
+          border: 0;
+
+          &:hover {
+            background: rgb(88, 8, 8);
           }
         }
 
-        .cart-buttons {
-          .button {
-            display: inline-block;
-            align-items: center;
-            font-weight: 500;
-            padding-top: 0;
-            padding-bottom: 0;
-            line-height: 35px;
-            border-radius: 0px;
-            position: relative;
-            width: 49.1%;
-            font-size: 11px;
-            font-family: "Montserrat", sans-serif;
-            color: #fff;
-            border: 1px solid transparent;
-            cursor: pointer;
-            
-          }
+        .checkout {
+          margin-right: -280px;
+          font-family: "Montserrat", sans-serif;
+          background-color: #000;
+          height: 40px;
+          line-height: 40px;
+          padding: 0 18px;
+          font-size: 9px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          color: #fff;
+          text-align: center;
+          border: 0;
+          display: inline;
 
-          .view-cart {
-            background-color: #fa4534;
-          }
-
-          .checkout {
-            background-color: black;
+          &:hover {
+            background: #b8abab;
+            color: black;
           }
         }
       }
 
-    }
-  }
+      .empty-cart {
+        width: 100%;
+        position: relative;
+        margin: 23px 20px;
+        display: none;
 
-  .icons {
-    margin-top: 0px;
-    z-index: 70;
-
-    .total {
-      margin-left: 5px;
-      font-size: 12px !important;
-      font-family: 'Montserrat', sans-serif;
-
-      .price {
-        font-size: 14px;
-        font-family: 'Montserrat', sans-serif;
+        p {
+          color: #686565;
+          font-size: 13px;
+          font-weight: 500;
+          font-family: "Montserrat", sans-serif;
+          height: 100%;
+          width: 100%;
+          line-height: 24px;
+        }
       }
     }
-
   }
 }
-.button{
-  display: inline-block;
-  background-color: #fa4534;
-  font-weight: 500;
-  padding-top: 0;
-  padding-bottom: 0;
-  // height: 60px;
-  line-height: 35px;
-  border-radius: 0px;
-  position: relative;
-  // margin-left:-31px ;
-  width: 100%;
-  font-size: 11px;
-  font-family: "Montserrat",sans-serif;
-  color:#fff;
-  border: 1px solid transparent;
-  cursor: pointer;
-}
+
+
+
 
 
 // Slider show has start -- reqqaseler gelsin :)
@@ -630,7 +592,7 @@ main {
           min-width: 1519px;
           position: relative;
           overflow: hidden;
-          
+
 
 
         }
@@ -689,7 +651,7 @@ main {
       }
 
       .flower {
-        
+
         overflow: hidden;
         margin-top: 15px;
 
@@ -1091,12 +1053,14 @@ main {
       }
     }
   }
-  #carousel{
-    .container{
-      .owl-carousel{
-        .item{
+
+  #carousel {
+    .container {
+      .owl-carousel {
+        .item {
           margin-left: 50px;
-          .test-img{
+
+          .test-img {
             margin-left: 80px;
             margin-top: 45px;
             margin-bottom: 50px;
@@ -1105,7 +1069,8 @@ main {
             justify-content: bottom;
             align-items: center;
           }
-          .test-text{
+
+          .test-text {
             color: #1b1b1b;
             font-family: "Montserrat", sans-serif;
             font-size: 12px;
@@ -1120,7 +1085,8 @@ main {
             align-items: center;
             text-align: center;
           }
-          .author-name{
+
+          .author-name {
             color: #1b1b1b;
             font-family: "Montserrat", sans-serif;
             font-size: 12px;
@@ -1135,7 +1101,8 @@ main {
             align-items: center;
             text-align: center;
           }
-          .author-job{
+
+          .author-job {
             color: #1b1b1b;
             font-family: "Montserrat", sans-serif;
             font-size: 12px;
@@ -1780,7 +1747,7 @@ main {
       }
     }
   }
-  
+
   #header {
     background-color: rgb(250, 250, 249);
 
@@ -1812,10 +1779,15 @@ main {
       }
     }
   }
-  #progress-bar { 
+
+  #progress-bar {
     padding: 8% 0;
-    .left, .right,.bottom {
+
+    .left,
+    .right,
+    .bottom {
       margin: 8% 0;
+
       .hidden-background {
         height: 4px;
         background-color: grey;
@@ -1823,9 +1795,12 @@ main {
         position: absolute;
         width: 636px;
         z-index: -1;
-        
+
       }
-      .growing,.watering, .furtilizing {
+
+      .growing,
+      .watering,
+      .furtilizing {
 
         .text-percentage {
           margin-bottom: 5px;
@@ -1858,8 +1833,9 @@ main {
           transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
           width: 0%;
 
-         
+
         }
+
         .background-watering {
           position: relative;
           margin-top: 5px;
@@ -1869,8 +1845,9 @@ main {
           transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
           width: 0%;
 
-         
+
         }
+
         .background-furtilizing {
           position: relative;
           margin-top: 5px;
@@ -1883,20 +1860,22 @@ main {
       }
     }
 
-    .left, .right , .bottom{
+    .left,
+    .right,
+    .bottom {
       padding: 10px;
     }
-    
 
- 
+
+
   }
 }
 
 
-@media(min-width: 768px) and (max-width: 992px){
-  main{
-    #progress-bar{
-      .bottom{
+@media(min-width: 768px) and (max-width: 992px) {
+  main {
+    #progress-bar {
+      .bottom {
         overflow: hidden;
       }
     }
@@ -1904,35 +1883,40 @@ main {
 
 }
 
-@media screen and (max-width:767px ) {
-  header{
-    .sidebar{
+// @media screen and (max-width:767px ) {
+//   header{
+//     .sidebar{
 
-    }
-  }
-}
+//     }
+//   }
+// }
 #accordion {
   .container {
     .upper-low {
       padding: 100px 0;
+
       .accordion1 {
-        .accHeadd{
+        .accHeadd {
           .head {
             padding: 13px 20px 13px 40px;
             margin: 15px 0 0;
             border: 1px solid #eee;
             cursor: pointer;
             position: relative;
-            transition:  0.2s ease-out;
+            transition: 0.2s ease-out;
+
             &:hover {
               background: #fa4534;
+
               .symbol {
-                color:white;
+                color: white;
               }
+
               .headTitle {
-                color:white;
+                color: white;
               }
             }
+
             .symbol {
               font-family: "Montserrat", sans-serif;
               position: absolute;
@@ -1948,6 +1932,7 @@ main {
               color: #1b1b1b;
               transition: color 0.2s ease-out;
             }
+
             .headTitle {
               font-family: "Montserrat", sans-serif;
               font-size: 12px;
@@ -1958,9 +1943,11 @@ main {
               transition: color 0.2s ease-out;
             }
           }
+
           .text {
             padding: 34px 0 20px;
             border: none;
+
             p {
               margin: 0;
               color: #6d6a6a;
@@ -1969,20 +1956,25 @@ main {
               font-size: 15px;
             }
           }
+
           .inactive {
             display: none;
           }
+
           .active-head1 {
             background: #fa4534;
+
             .symbol {
-              color:white;
+              color: white;
             }
+
             .headTitle {
-              color:white;
+              color: white;
             }
           }
         }
       }
+
       .accordion2 {
         .accHeadd {
           .head {
@@ -1991,16 +1983,20 @@ main {
             border: 1px solid #eee;
             cursor: pointer;
             position: relative;
-            transition:  0.2s ease-out;
+            transition: 0.2s ease-out;
+
             &:hover {
               background: #fa4534;
+
               .symbol {
-                color:white;
+                color: white;
               }
+
               .headTitle {
-                color:white;
+                color: white;
               }
             }
+
             .symbol {
               font-family: "Montserrat", sans-serif;
               position: absolute;
@@ -2016,6 +2012,7 @@ main {
               color: #1b1b1b;
               transition: color 0.2s ease-out;
             }
+
             .headTitle {
               font-family: "Montserrat", sans-serif;
               font-size: 12px;
@@ -2026,9 +2023,11 @@ main {
               transition: color 0.2s ease-out;
             }
           }
+
           .text {
             padding: 34px 0 20px;
             border: none;
+
             p {
               margin: 0;
               color: #6d6a6a;
@@ -2037,23 +2036,29 @@ main {
               font-size: 15px;
             }
           }
+
           .inactive {
             display: none;
           }
+
           .active-head1 {
             background: #fa4534;
+
             .chevron {
-              color:white;
+              color: white;
             }
+
             .headTitle {
-              color:white;
+              color: white;
             }
           }
         }
       }
     }
+
     .lower-row {
       padding: 100px 0;
+
       .accordion3 {
         .accHeadd {
           .head {
@@ -2062,14 +2067,17 @@ main {
             border-bottom: 1px solid #eee;
             cursor: pointer;
             position: relative;
+
             &:hover {
               .symbol {
                 color: #fa4534;
               }
+
               .headTitle {
                 color: #fa4534;
               }
             }
+
             .chevron {
               font-family: "Montserrat", sans-serif;
               position: absolute;
@@ -2085,6 +2093,7 @@ main {
               color: #1b1b1b;
               transition: color 0.2s ease-out;
             }
+
             .headTitle {
               font-family: "Montserrat", sans-serif;
               font-size: 12px;
@@ -2095,9 +2104,11 @@ main {
               transition: color 0.2s ease-out;
             }
           }
+
           .text {
             padding: 34px 0 20px;
             border: none;
+
             p {
               margin: 0;
               color: #6d6a6a;
@@ -2106,35 +2117,42 @@ main {
               font-size: 15px;
             }
           }
+
           .inactive {
             display: none;
           }
+
           .active-head2 {
             .symbol {
               color: #fa4534;
             }
+
             .headTitle {
               color: #fa4534;
             }
           }
         }
       }
+
       .accordion4 {
-        .accHeadd{
-          .head{
+        .accHeadd {
+          .head {
             padding: 13px 20px 13px 40px;
             margin: 15px 0 0;
             border-bottom: 1px solid #eee;
             cursor: pointer;
             position: relative;
+
             &:hover {
               .symbol {
                 color: #fa4534;
               }
+
               .headTitle {
                 color: #fa4534;
               }
             }
+
             .symbol {
               font-family: "Montserrat", sans-serif;
               position: absolute;
@@ -2150,6 +2168,7 @@ main {
               color: #1b1b1b;
               transition: color 0.2s ease-out;
             }
+
             .headTitle {
               font-family: "Montserrat", sans-serif;
               font-size: 12px;
@@ -2160,9 +2179,11 @@ main {
               transition: color 0.2s ease-out;
             }
           }
+
           .text {
             padding: 34px 0 20px;
             border: none;
+
             p {
               margin: 0;
               color: #6d6a6a;
@@ -2171,13 +2192,16 @@ main {
               font-size: 15px;
             }
           }
+
           .inactive {
             display: none;
           }
+
           .active-head2 {
             .symbol {
               color: #fa4534;
             }
+
             .headTitle {
               color: #fa4534;
             }

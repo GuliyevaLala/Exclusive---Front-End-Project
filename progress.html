@@ -14,9 +14,9 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./Sass/Flower-Shop-Design.css">
     <title>Fiorello - A Flower shop and Florist WooCommerce Theme</title>
+</head>
 
 <body>
-
     <header>
         <nav>
             <div class="container">
@@ -271,57 +271,49 @@
 
                     <!-- baby icons -->
                     <div class="col-lg-2">
-                        <div class="icons">
+                        <div id="icons">
                             <div class="search">
-                                <span><i class="fas fa-search  searchIcon"></i></span>
-                                <div class="search-box d-none">
-                                    <input type="text" placeholder="which flower do u want to order" id="search-box">
-                                    <a href=""><i class="fas fa-search searchIcon"></i></a>
-                                </div>
-                            </div>
-                            <div class="cartdiv">
-                                <a href="#" class="cart"><span class="bag-icon"> <i
-                                            class="fas fa-shopping-bag bag"><sup>
-                                                <p class="amount">0</p>
-                                            </sup></i></span><span class="total">CART(<span
-                                            class="price">0</span>)</span></a>
+                                <span class="search-icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
 
-                                <div class="cart-dropdown" style="display: none;">
-                                    <p class="text-center no-product" style="display: none;">No products in the cart</p>
-                                    <div class="cart-header">
-                                        <ul>
-                                        </ul>
-                                    </div class="cart-header">
-                                    <div class="cart-bottom">
-                                        <div class="subtotal-holder">
+                                <a href="" class="cart">
+                                    <span class="bag-icon">
+                                        <i class="fas fa-shopping-bag bag">
+                                            <sup>
+                                                <p id="item-count">0</p>
+                                            </sup>
+                                        </i>
+                                        <span>CART(<span class="total-price">$0</span>)</span>
+                                    </span>
+                                    <ul class="cart-drop">
+                                        <li class="cart-items">
+
+                                        </li>
+                                        <div class="subtotal">
                                             <span class="total">TOTAL:</span>
-                                            <span class="amount text-right">
-                                                <p>170</p>
-                                            </span>
+                                            <span class="amount">$0</span>
                                         </div>
-                                        <div class="cart-buttons">
-                                            <input type="submit" value="VIEW CART" class="button view-cart">
-                                            <input type="submit" value="CHECKOUT" class="button checkout">
+                                        <div class="buttons">
+                                            <button class="view-cart">VIEW CART</button>
+                                            <button class="checkout">CHECKOUT</button>
                                         </div>
-
-                                    </div>
-                                </div>
+                                        <div class="empty-cart">
+                                            <p>No products in the cart.</p>
+                                        </div>
+                                    </ul>
+                                </a>
                             </div>
-
-
-                            <span><i class="fas fa-bars bar"></i></span>
                         </div>
                     </div>
-
-                    <!-- baby icons -->
                 </div>
             </div>
         </nav>
     </header>
+    <!-- header the end-->
     <main>
 
-        <!-- header the end-->
-        <!-- header part begins -->
+
         <section id="header">
             <div class="container">
                 <div class="row">
@@ -449,46 +441,46 @@
                                     <span>%</span><span>95</span>
                                 </div>
                             </div>
-                             <div class="background-growing">
-                                 <div class="hidden-background" style="width: 1292px;">
-    
-                                 </div>
-                             </div>
-                         </div>
-    
-                         <div class="watering">
-                             <div class="text-percentage">
-                                 <div class="text">
-                                     <span>Watering</span>
-                                 </div>
-                                 <div class="percentage">
-                                     <span>%</span><span>80</span>
-                                 </div>
-                             </div>
-                              <div class="background-watering">
-                                  <div class="hidden-background"  style="width: 1292px;">
-                                      
-                                  </div>
-                              </div>
-                          </div>
-                          
-                         <div class="furtilizing">
-                             <div class="text-percentage">
-                                 <div class="text">
-                                     <span>Furtilizing</span>
-                                 </div>
-                                 <div class="percentage">
-                                     <span>%</span><span>55</span>
-                                 </div>
-                             </div>
-                              <div class="background-furtilizing" >
-                                  <div class="hidden-background" style="width: 1292px;">
-                                      
-                                  </div>
-                              </div>
-                          </div>
-                      
-                </div>
+                            <div class="background-growing">
+                                <div class="hidden-background" style="width: 1292px;">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="watering">
+                            <div class="text-percentage">
+                                <div class="text">
+                                    <span>Watering</span>
+                                </div>
+                                <div class="percentage">
+                                    <span>%</span><span>80</span>
+                                </div>
+                            </div>
+                            <div class="background-watering">
+                                <div class="hidden-background" style="width: 1292px;">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="furtilizing">
+                            <div class="text-percentage">
+                                <div class="text">
+                                    <span>Furtilizing</span>
+                                </div>
+                                <div class="percentage">
+                                    <span>%</span><span>55</span>
+                                </div>
+                            </div>
+                            <div class="background-furtilizing">
+                                <div class="hidden-background" style="width: 1292px;">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -496,8 +488,7 @@
         </section>
         <!-- progress part1 -->
 
-     
-        <!-- progress part2  -->
+
 
 
         <!-- footer start  -->
@@ -564,4 +555,5 @@
         <!-- footer end -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="./Js/progressbar.js"></script>
+    </main>
 </body>

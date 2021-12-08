@@ -39,3 +39,26 @@ $(document).ready(function(){
     //     }
     //     counting()
     // }
+    let percentages = document.querySelectorAll(".progress-bar-1 .sides .percentage");
+    
+    
+    for(let percentage of percentages){
+        let count = percentage.innerText
+        let temp = 0
+        function counting(){
+            if(temp<count){
+                setTimeout(function(){
+                    percentage.innerText = temp;
+                    temp+=1;
+                    counting();
+                },50)
+            }
+            else{
+                setTimeout(function(){
+                    percentage.innerText = count
+                },1000)
+            }
+        }
+        counting()
+    }
+    
