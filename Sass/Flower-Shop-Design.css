@@ -268,7 +268,7 @@ header nav .navigator .main:hover .option {
 #icons .search .cart .bag-icon i sup {
   border-radius: 50%;
   background: #ec4435;
-  width: 14px;
+  width: 18px;
   height: 15px;
   position: absolute;
   top: -3px;
@@ -279,9 +279,16 @@ header nav .navigator .main:hover .option {
 }
 
 #icons .search .cart .bag-icon i sup p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
   position: absolute;
   top: 6.8px;
-  left: 3.5px;
+  left: 2.8px;
 }
 
 #icons .search .cart .bag-icon span {
@@ -294,45 +301,57 @@ header nav .navigator .main:hover .option {
   margin-left: 0;
 }
 
-#icons .search .cart .cart-drop {
+#icons .search .cart .cart-total {
+  position: relative;
+  height: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+  top: 50px;
+  background-color: white;
+  z-index: 9999;
+}
+
+#icons .search .cart .cart-total .cart-drop {
+  width: 100%;
   margin-top: -2px;
   border-style: none;
   position: absolute;
   background: white;
   z-index: 3000;
-  width: 246px;
+  height: 180px;
   cursor: auto;
-  display: none;
+  overflow-y: scroll;
 }
 
-#icons .search .cart .cart-drop .cart-item {
-  padding: 35px 6px;
+#icons .search .cart .cart-total .cart-drop .cart-item {
+  padding: 0px 6px;
   position: relative;
   line-height: 1.9;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
 }
 
-#icons .search .cart .cart-drop .cart-item .image {
+#icons .search .cart .cart-total .cart-drop .cart-item .image {
   padding-left: 10px;
   width: 50px;
   height: 100%;
   float: left;
 }
 
-#icons .search .cart .cart-drop .cart-item .image img {
+#icons .search .cart .cart-total .cart-drop .cart-item .image img {
   padding-top: 19px;
   width: 100%;
 }
 
-#icons .search .cart .cart-drop .cart-item .info {
+#icons .search .cart .cart-total .cart-drop .cart-item .info {
   padding: 0 19px;
   height: 100%;
   width: 100%;
   position: relative;
 }
 
-#icons .search .cart .cart-drop .cart-item .info .name {
+#icons .search .cart .cart-total .cart-drop .cart-item .info .name {
   padding-top: 19px !important;
   padding-top: -20px !important;
   line-height: 1;
@@ -346,7 +365,7 @@ header nav .navigator .main:hover .option {
   cursor: pointer;
 }
 
-#icons .search .cart .cart-drop .cart-item .info .quantity {
+#icons .search .cart .cart-total .cart-drop .cart-item .info .quantity {
   display: inline-block;
   margin: 3px 0 0;
   font-size: 12px;
@@ -355,7 +374,7 @@ header nav .navigator .main:hover .option {
   padding-left: 11px;
 }
 
-#icons .search .cart .cart-drop .cart-item .info .quantity::after {
+#icons .search .cart .cart-total .cart-drop .cart-item .info .quantity::after {
   content: "X";
   display: inline-block;
   position: relative;
@@ -363,14 +382,14 @@ header nav .navigator .main:hover .option {
   color: #afafaf;
 }
 
-#icons .search .cart .cart-drop .cart-item .info .price {
+#icons .search .cart .cart-total .cart-drop .cart-item .info .price {
   display: inline-block;
   margin: 0;
   font-size: 12px;
   color: #afafaf;
 }
 
-#icons .search .cart .cart-drop .cart-item .info .remove {
+#icons .search .cart .cart-total .cart-drop .cart-item .info .remove {
   font-size: 12px;
   color: #ec4435;
   position: absolute;
@@ -379,13 +398,27 @@ header nav .navigator .main:hover .option {
   cursor: pointer;
 }
 
-#icons .search .cart .subtotal {
-  width: 100%;
-  position: relative;
-  padding: 0px 21px 16px;
+#icons .search .cart .cart-total .subtotal-buttons {
+  padding: 12px 0 !important;
+  position: absolute;
+  bottom: 0%;
 }
 
-#icons .search .cart .subtotal .total {
+#icons .search .cart .cart-total .subtotal-buttons .subtotal {
+  width: 199.95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* width: 100%; */
+  width: 195.99px !important;
+  width: 100%;
+  position: relative;
+}
+
+#icons .search .cart .cart-total .subtotal-buttons .subtotal .total {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -394,7 +427,7 @@ header nav .navigator .main:hover .option {
   line-height: 20px;
 }
 
-#icons .search .cart .subtotal .amount {
+#icons .search .cart .cart-total .subtotal-buttons .subtotal .amount {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -403,15 +436,20 @@ header nav .navigator .main:hover .option {
   float: right;
 }
 
-#icons .search .cart .buttons {
-  display: inline-block;
+#icons .search .cart .cart-total .subtotal-buttons .buttons {
+  position: fixed;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 500;
   padding-top: 0;
   padding-bottom: 0;
   line-height: 35px;
   border-radius: 0px;
   position: relative;
-  width: 48%;
   font-size: 11px;
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -419,55 +457,67 @@ header nav .navigator .main:hover .option {
   cursor: pointer;
 }
 
-#icons .search .cart .buttons .view-cart {
-  margin-left: -32px;
-  margin-right: 30px;
+#icons .search .cart .cart-total .subtotal-buttons .buttons .view-cart {
   font-family: "Montserrat", sans-serif;
   height: 40px;
   line-height: 40px;
-  padding: 0 18px;
   font-size: 9px;
   font-weight: 500;
   letter-spacing: 1px;
   color: #fff;
   background-color: #ec4435;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   border: 0;
+  width: 48%;
 }
 
-#icons .search .cart .buttons .view-cart:hover {
+#icons .search .cart .cart-total .subtotal-buttons .buttons .view-cart:hover {
   background: #580808;
 }
 
-#icons .search .cart .buttons .checkout {
-  margin-right: -280px;
+#icons .search .cart .cart-total .subtotal-buttons .buttons .checkout {
   font-family: "Montserrat", sans-serif;
   background-color: #000;
   height: 40px;
   line-height: 40px;
-  padding: 0 18px;
+  width: 48%;
   font-size: 9px;
   font-weight: 500;
   letter-spacing: 1px;
   color: #fff;
-  text-align: center;
   border: 0;
-  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-#icons .search .cart .buttons .checkout:hover {
+#icons .search .cart .cart-total .subtotal-buttons .buttons .checkout:hover {
   background: #b8abab;
   color: black;
 }
 
-#icons .search .cart .empty-cart {
+#icons .search .cart .cart-total .subtotal-buttons .empty-cart {
   width: 100%;
   position: relative;
   margin: 23px 20px;
   display: none;
 }
 
-#icons .search .cart .empty-cart p {
+#icons .search .cart .cart-total .subtotal-buttons .empty-cart p {
   color: #686565;
   font-size: 13px;
   font-weight: 500;
@@ -1013,24 +1063,30 @@ main #blog .container .row .item .info {
   text-align: center;
 }
 
+main #carousel .container .owl-carousel .owl-nav, main #carousel .container .owl-carousel .owl-dots {
+  margin-left: 15px;
+}
+
 main #carousel .container .owl-carousel .item {
   margin-left: 50px;
 }
 
 main #carousel .container .owl-carousel .item .test-img {
-  margin-left: 80px;
   margin-top: 45px;
   margin-bottom: 50px;
-  max-width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: bottom;
-      -ms-flex-pack: bottom;
-          justify-content: bottom;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main #carousel .container .owl-carousel .item .test-img img {
+  width: 200px;
 }
 
 main #carousel .container .owl-carousel .item .test-text {

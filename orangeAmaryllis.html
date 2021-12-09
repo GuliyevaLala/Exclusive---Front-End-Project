@@ -286,22 +286,35 @@
                                         </i>
                                         <span>CART(<span class="total-price">$0</span>)</span>
                                     </span>
-                                    <ul class="cart-drop">
-                                        <li class="cart-items">
-
-                                        </li>
-                                        <div class="subtotal">
-                                            <span class="total">TOTAL:</span>
-                                            <span class="amount">$0</span>
+                                    <div class="cart-total">
+                                        <ul class="cart-drop">
+                                            <li class="cart-items">
+    
+                                            </li>
+                                           
+                                           
+                                            <div class="empty-cart">
+                                                <p>No products in the cart.</p>
+                                            </div>
+                                        </ul>
+                                        <div class="subtotal-buttons">
+                                            <div class="subtotal">
+                                                <span class="total">TOTAL:</span>
+                                                <span class="amount">$0</span>
+                                            </div>
+                                            <div class="buttons">
+                                                <button class="view-cart">VIEW CART</button>
+                                                <button class="checkout">CHECKOUT</button>
+                                            </div>
                                         </div>
-                                        <div class="buttons">
-                                            <button class="view-cart">VIEW CART</button>
-                                            <button class="checkout">CHECKOUT</button>
-                                        </div>
-                                        <div class="empty-cart">
-                                            <p>No products in the cart.</p>
-                                        </div>
-                                    </ul>
+                                    </div>
+                                    <div class="alert cardalert alert-danger" style="top: 48px;
+                                    z-index: 13000;opacity: 0%;transition: 0.3s;" role="alert">
+                                        Your basket is empty!
+                                      </div>
+                                    
+                                   
+                                   
                                 </a>
                             </div>
                         </div>
@@ -389,7 +402,7 @@
 
         <!-- product end -->
         <!-- review -->
-        </section>
+        
         <section id="review">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                 <div class="product-review">
@@ -461,64 +474,57 @@
 
 
 
-        </section>
-
-
-
-        <!-- footer start -->
-
-
-
+        
         <section id="footer">
             <footer>
                 <div class="container">
                     <div class="row upper-row">
                         <ul class="col-lg-3 col-md-3 col-sm-6 col-12">
-                            <li class="header">CUSTOMER SERVICE</li>
-                            <li class="f-list-item">Help & Contact Us</li>
-                            <li class="f-list-item">Returns & Refunds</li>
-                            <li class="f-list-item">Online Stores</li>
-                            <li class="f-list-item">Terms & Conditions</li>
+                            <li class="footer-top">CUSTOMER SERVICE</li>
+                            <li class="footer-context">Help & Contact Us</li>
+                            <li class="footer-context">Returns & Refunds</li>
+                            <li class="footer-context">Online Stores</li>
+                            <li class="footer-context">Terms & Conditions</li>
                         </ul>
                         <ul class="col-lg-3 col-md-3 col-sm-6 col-12">
-                            <li class="header">COMPANY</li>
-                            <li class="f-list-item">About Us</li>
-                            <li class="f-list-item">Blog</li>
-                            <li class="f-list-item">Order Tracking</li>
-                            <li class="f-list-item">FAQ Page</li>
-                            <li class="f-list-item">Contact Us</li>
-                            <li class="f-list-item">Login</li>
+                            <li class="footer-top">COMPANY</li>
+                            <li class="footer-context">About Us</li>
+                            <li class="footer-context">Blog</li>
+                            <li class="footer-context">Order Tracking</li>
+                            <li class="footer-context">FAQ Page</li>
+                            <li class="footer-context">Contact Us</li>
+                            <li class="footer-context">Login</li>
                         </ul>
                         <ul class="col-lg-3 col-md-3 col-sm-6 col-12">
-                            <li class="header">SOCIAL MEDIA</li>
-                            <li class="f-list-item">Twitter</li>
-                            <li class="f-list-item">Instagram</li>
-                            <li class="f-list-item">Tumblr</li>
-                            <li class="f-list-item">Pinterest</li>
+                            <li class="footer-top">SOCIAL MEDIA</li>
+                            <li class="footer-context">Twitter</li>
+                            <li class="footer-context">Instagram</li>
+                            <li class="footer-context">Tumblr</li>
+                            <li class="footer-context">Pinterest</li>
                         </ul>
                         <ul class="col-lg-3 col-md-3 col-sm-6 col-12">
-                            <li class="header">ARCHIVE</li>
-                            <li class="f-list-item">Designer Shoes</li>
-                            <li class="f-list-item">Gallery</li>
-                            <li class="f-list-item">Pricing</li>
-                            <li class="f-list-item">Feature Index</li>
-                            <li class="f-list-item">Login</li>
-                            <li class="f-list-item">Help & Support</li>
+                            <li class="footer-top">ARCHIVE</li>
+                            <li class="footer-context">Designer Shoes</li>
+                            <li class="footer-context">Gallery</li>
+                            <li class="footer-context">Pricing</li>
+                            <li class="footer-context">Feature Index</li>
+                            <li class="footer-context">Login</li>
+                            <li class="footer-context">Help & Support</li>
                         </ul>
                     </div>
                     <div class="row lower-row">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="text">
+                            <div class="byme">
                                 <p>Powered by <span>Lala Guliyeva</span> 2021</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="image">
+                            <div class="creditcards">
                                 <img src="photos/credit-cards.png" alt="">
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="socials">
+                            <div class="socialmedia">
                                 <span>INSTAGRAM</span>
                                 <span>FACEBOOK</span>
                             </div>
@@ -528,6 +534,18 @@
             </footer>
         </section>
 
+
+
+        <!-- footer start -->
+
+
+
+       
+
         <!-- footer end -->
+      
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./Js/cart.js"></script>
+    <script src="./Js/home.js"></script>
 </body>
