@@ -1,14 +1,14 @@
 
 $(document).ready(function() {
     // $('.headTitle').click(function() {
-    //   if ($(this).hasClass('.symbol')) {
-    //     $(this).removeClass('.symbol').next('.text').slideUp();
+    //   if ($(this).hasClass('active')) {
+    //     $(this).removeClass('active').next('.text').slideUp();
     //   } else {
-    //     $('.headTitle').removeClass('.symbol');
+    //     $('.headTitle').removeClass('.active');
     //     $('.text').slideUp();
-    //     $(this).addClass('.symbol').next('.text').slideDown();
+    //     $(this).addClass('.active').next('.text').slideDown();
     //   }
-    // });
+    
 
     $(".accordion1 .accHeadd").click(function(){
       let article = $(this).children().last()

@@ -62,8 +62,7 @@ $(document).ready(function(){
         setTimeout(function(){
             bottomcurrValue1+=step
             bottomgrowingSpan1.text(bottomcurrValue1)
-        }, 25 * i);
-        
+        }, 25 * i);   
         
     }
         }

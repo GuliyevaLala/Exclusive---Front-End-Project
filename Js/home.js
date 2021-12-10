@@ -1,4 +1,37 @@
-$(document).ready(function () {
+$(document).ready(function(){
+    $(".instagram").owlCarousel(
+        {
+            items: 4,
+            loop: true,
+            autoplay: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                576:{
+                    items:2
+                },
+                768:{
+                    items:3
+                },
+                992:{
+                    items:4
+                }
+            }
+        }
+    );
+  
+
+  $(document).ready(function(){
+    $(".say").owlCarousel(
+        {
+            items: 1,
+            loop: true,
+            autoplay: true
+        }
+    );
+  });
+})
     
 
 
@@ -59,9 +92,6 @@ $(function(){
 })       // climbup
 
   
-    }
-)
-  
 let list = document.querySelectorAll("#shop .categories ul li a");
 let types = document.querySelectorAll("#shop .types .type");
 
@@ -94,5 +124,73 @@ let types = document.querySelectorAll("#shop .types .type");
    
 
 // pagesssssssssssssssssssssssssssssssssssssss
+
+// function of navbar
+function myFunction(x) {
+    if (x.matches) { 
+        $(".main").mouseenter(function () {
+            $(this).children().last().css({ "display": "block" });
+        })
+        $(".main").mouseleave(function () {
+            $(this).children().last().css({ "display": "none" });
+
+        })
+
+        // function of navbar arrows
+
+        $(".rightsideoption").mouseenter(function () {
+            $(".rightsideoptioninfo").not($(this).next()).hide();
+            $(this).children().last().fadeIn();
+        })
+
+        $(".rightsideoption").mouseleave(function () {
+            $(this).children().last().hide();
+
+        })
+
+        $(".leftsideoption").mouseenter(function () {
+            $(".leftsideoptioninfo").not($(this).next()).hide();
+            $(this).children().last().fadeIn();
+        })
+
+        $(".leftsideoption").mouseleave(function () {
+            $(this).children().last().hide();
+
+        })
+
+    } else {
+        $(".fa-window-close").click(function(){
+            $(".sidebar").animate({"right":"-1000px"})
+        })
+        $(".fa-bars").click(function(){
+            $(".sidebar").animate({"right":"0"})
+        })
+        $(".main").click(function (event) {
+            $(".option").not($(this).children().last()).hide();
+            $(this).children().last().not($(".subcontent")).css({ "display": "block" });
+            if($(this)==$(".subcontent").parent().parent().parent()){
+                console.log("hello")
+            }
+        })
+        $(".subs").click(function () {
+            $(".subcontent").not($(this).children().last()).hide();
+            $(this).children().last().css({ "display": "block" });
+        })
+        $(".rightsideoption").click(function (event) {
+            event.preventDefault()
+            $(".rightsideoptioninfo").not($(this).next()).hide();
+            $(this).children().last().fadeIn();
+        })
+
+        $(".leftsideoption").click(function (event) {
+            event.preventDefault()
+            $(".leftsideoptioninfo").not($(this).next()).hide();
+            $(this).children().last().fadeIn();
+        })
+    }
+}
+var x = window.matchMedia("(min-width: 992px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 
 

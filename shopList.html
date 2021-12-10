@@ -12,6 +12,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Sass/owl.carousel.min.css">
+    <link rel="stylesheet" href="./Sass/owl.theme.default.min.css">
     <link rel="stylesheet" href="./Sass/Flower-Shop-Design.css">
     <title>Fiorello - A Flower shop and Florist WooCommerce Theme</title>
 </head>
@@ -289,10 +291,10 @@
                                     <div class="cart-total">
                                         <ul class="cart-drop">
                                             <li class="cart-items">
-    
+
                                             </li>
-                                           
-                                           
+
+
                                             <div class="empty-cart">
                                                 <p>No products in the cart.</p>
                                             </div>
@@ -311,10 +313,10 @@
                                     <div class="alert cardalert alert-danger" style="top: 48px;
                                     z-index: 13000;opacity: 0%;transition: 0.3s;" role="alert">
                                         Your basket is empty!
-                                      </div>
-                                    
-                                   
-                                   
+                                    </div>
+
+
+
                                 </a>
                             </div>
                         </div>
@@ -325,88 +327,95 @@
     </header>
     <!-- header the end-->
     <main>
-
-        <!-- header part begins -->
-        <section id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="header">
+        <section id="shop-list-title">
+            <div class="container py-4">
+                <div class="row py-5">
+                    <div class="col-12">
                         <h1>Shop List</h1>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- header part ends -->
 
-        <section id="flowers" class="shop-list">
+        <section id="shop-list">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6 flower ">
-                        <div class="image">
-                            <img src="photos/flower-1.png" alt="">
-                            <div class="layer d-none">
-                                <div class="properties">
-                                    <div class="name">
-                                        <h6>Schefflera</h6>
-                                    </div>
-                                    <div class="price">
-                                        <p>259</p>
-                                    </div>
-                                    <input type="submit" value="ADD TO CART"
-                                        class="button justify-content-center option shop-listb">
-                                </div>
+                <div class="row py-5">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item product-item-small text-center" data-id="popular">
+                            <div class="img">
+                                <a href="">
+                                    <img src="photos/flower-1.png" class="img-fluid" alt="">
+                                </a>
                             </div>
-                        </div>
-
-
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 flower">
-                        <div class="image">
-                            <img src="photos/flower-5.png" alt="">
-                            <div class="layer d-none">
-                                <div class="properties">
-                                    <div class="name">
-                                        <h6>Orange Amaryllis</h6>
-                                    </div>
-                                    <div class="price">
-                                        <p>259</p>
-                                    </div>
-                                    <input type="submit" value="ADD TO CART"
-                                        class="button justify-content-center option shop-listb">
+                            <div class="overlay d-flex flex-column justify-content-center">
+                                <div class="title mt-3">
+                                    <h6>MAJESTY PALM</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">$259</span>
+                                </div>
+                                <div class="button mt-3">
+                                    <button class="btn btn-danger rounded-0">Add to cart</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 flower">
-                        <div class="image">
-                            <img src="photos/flower-13.png" alt="">
-                            <div class="layer d-none">
-                                <div class="properties">
-                                    <div class="name">
-                                        <h6>Cactus in Orange</h6>
-                                    </div>
-                                    <div class="price">
-                                        <p>259</p>
-                                    </div>
-                                    <input type="submit" value="ADD TO CART"
-                                        class="button justify-content-center option shop-listb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item product-item-small text-center" data-id="popular">
+                            <div class="img">
+                                <a href="">
+                                    <img src="photos/oa-4.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="overlay d-flex flex-column justify-content-center">
+                                <div class="title mt-3">
+                                    <h6>ORANGE AMMARYLLIS</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">$259</span>
+                                </div>
+                                <div class="button mt-3">
+                                    <button class="btn btn-danger rounded-0">Add to cart</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 flower">
-                        <div class="image">
-                            <img src="photos/flower-12.png" alt="">
-                            <div class="layer d-none">
-                                <div class="properties">
-                                    <div class="name">
-                                        <h6>Pink Flower Tree</h6>
-                                    </div>
-                                    <div class="price">
-                                        <p>350</p>
-                                    </div>
-                                    <input type="submit" value="ADD TO CART"
-                                        class="button justify-content-center option shop-listb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item product-item-small text-center" data-id="popular">
+                            <div class="img">
+                                <a href="">
+                                    <img src="photos/flower-2.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="overlay d-flex flex-column justify-content-center">
+                                <div class="title mt-3">
+                                    <h6>FOXGLOVE FLOWER</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">$259</span>
+                                </div>
+                                <div class="button mt-3">
+                                    <button class="btn btn-danger rounded-0">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item product-item-small text-center" data-id="popular">
+                            <div class="img">
+                                <a href="">
+                                    <img src="photos/flower-8.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="overlay d-flex flex-column justify-content-center">
+                                <div class="title mt-3">
+                                    <h6>WILD ROSES</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">$259</span>
+                                </div>
+                                <div class="button mt-3">
+                                    <button class="btn btn-danger rounded-0">Add to cart</button>
                                 </div>
                             </div>
                         </div>
@@ -415,7 +424,112 @@
             </div>
         </section>
 
+        <!-- Plants START -->
 
+        <section id="plants">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-sm-6 col-md-4 col-lg-2 mt-3">
+                        <div class="product-item product-item-small text-center" data-id="popular">
+                            <div class="photo">
+                                <a href="">
+                                    <img src="photos/flower-5.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>POPULAR</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">$259</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 mt-3">
+                        <div class="product-item product-item-small text-center" data-id="popular">
+                            <div class="photo">
+                                <a href="">
+                                    <img src="photos/flower-8.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>WINTER</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">$259</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 mt-3">
+                        <div class="product-item product-item-small text-center" data-id="winter">
+                            <div class="photo">
+                                <a href="">
+                                    <img src="photos/flower-3.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>VARIOUS</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">$259</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 mt-3">
+                        <div class="product-item product-item-small text-center" data-id="winter">
+                            <div class="photo">
+                                <a href="">
+                                    <img src="photos/flower-10.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>EXOTIC</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">$259</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 mt-3">
+                        <div class="product-item product-item-small text-center" data-id="various">
+                            <div class="photo">
+                                <a href="">
+                                    <img src="photos/flower-7.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>GREENS</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">$259</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 mt-3">
+                        <div class="product-item product-item-small text-center" data-id="various">
+                            <div class="photo">
+                                <a href="">
+                                    <img src="photos/flower-11.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>CACTUSES</h6>
+                            </div>
+                            <div class="price">
+                                <span class="text-black-50">$259</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS END -->
+
+
+
+
+
+   
 
         <!-- footer start -->
 
@@ -481,10 +595,10 @@
         <!-- footer end -->
 
     </main>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="owl_carousel/dist/owl.carousel.js"></script>
     <script src="./Js/home.js"></script>
-
-
     <script src="./Js/cart.js"></script>
-    
+
 </body>

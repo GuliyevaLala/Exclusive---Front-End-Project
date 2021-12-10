@@ -772,20 +772,20 @@ main #shop .types .flower .image .saleproduct {
   z-index: 100;
 }
 
-main .valentine {
+main #valentine {
   background-color: #eeeded;
   height: 500px;
   margin-top: 110px;
   padding-top: 90px;
 }
 
-main .valentine .valentineVideo {
+main #valentine .valentineVideo {
   overflow: hidden;
   position: relative;
   padding-left: 50px;
 }
 
-main .valentine .valentineVideo .videopart {
+main #valentine .valentineVideo .videopart {
   position: absolute;
   display: block;
   width: 100%;
@@ -795,12 +795,12 @@ main .valentine .valentineVideo .videopart {
   z-index: 1;
 }
 
-main .valentine .valentineVideo .videopart img:hover {
+main #valentine .valentineVideo .videopart img:hover {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
 }
 
-main .valentine .valentineVideo .videopart img {
+main #valentine .valentineVideo .videopart img {
   height: 450px;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -809,7 +809,7 @@ main .valentine .valentineVideo .videopart img {
   cursor: pointer;
 }
 
-main .valentine .valentineVideo .videopart i {
+main #valentine .valentineVideo .videopart i {
   background-color: #e0d6d6;
   padding: 40px;
   border-radius: 50%;
@@ -823,7 +823,7 @@ main .valentine .valentineVideo .videopart i {
           transform: translate(-50%, -50%);
 }
 
-main .valentine .quote {
+main #valentine .quote {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -837,36 +837,36 @@ main .valentine .quote {
   padding-left: 80px;
 }
 
-main .valentine .quote .title {
+main #valentine .quote .title {
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
   padding-bottom: 20px;
 }
 
-main .valentine .quote .title span {
+main #valentine .quote .title span {
   color: red;
 }
 
-main .valentine .quote .context {
+main #valentine .quote .context {
   padding-bottom: 20px;
   width: 550px;
 }
 
-main .valentine .quote .context p {
+main #valentine .quote .context p {
   margin-left: 5px;
   font-size: 16px;
   opacity: 50%;
   font-family: 'Lora', serif;
 }
 
-main .valentine .quote .hearticons .savethe,
-main .valentine .quote .hearticons .world {
+main #valentine .quote .hearticons .savethe,
+main #valentine .quote .hearticons .world {
   margin-top: 10px;
 }
 
-main .valentine .quote .hearticons .loveto span,
-main .valentine .quote .hearticons .savethe span,
-main .valentine .quote .hearticons .world span {
+main #valentine .quote .hearticons .loveto span,
+main #valentine .quote .hearticons .savethe span,
+main #valentine .quote .hearticons .world span {
   margin-left: 5px;
   font-size: 16px;
   opacity: 50%;
@@ -1063,7 +1063,8 @@ main #blog .container .row .item .info {
   text-align: center;
 }
 
-main #carousel .container .owl-carousel .owl-nav, main #carousel .container .owl-carousel .owl-dots {
+main #carousel .container .owl-carousel .owl-nav,
+main #carousel .container .owl-carousel .owl-dots {
   margin-left: 15px;
 }
 
@@ -1086,14 +1087,15 @@ main #carousel .container .owl-carousel .item .test-img {
 }
 
 main #carousel .container .owl-carousel .item .test-img img {
-  width: 200px;
+  width: 147px;
 }
 
 main #carousel .container .owl-carousel .item .test-text {
-  color: #1b1b1b;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  line-height: 32px;
+  color: #4b4747;
+  font-family: Lora, serif;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.5em;
   font-weight: 500;
   letter-spacing: 1.6 px;
   margin-top: 20px;
@@ -1113,9 +1115,34 @@ main #carousel .container .owl-carousel .item .test-text {
 
 main #carousel .container .owl-carousel .item .author-name {
   color: #1b1b1b;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat;
   font-size: 12px;
-  line-height: 32px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main #carousel .container .owl-carousel .item .author-job {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-transform: none;
+  color: #afafaf;
   font-weight: 500;
   letter-spacing: 1.6 px;
   margin-top: 20px;
@@ -1133,26 +1160,47 @@ main #carousel .container .owl-carousel .item .author-name {
   text-align: center;
 }
 
-main #carousel .container .owl-carousel .item .author-job {
-  color: #1b1b1b;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  line-height: 32px;
-  font-weight: 500;
-  letter-spacing: 1.6 px;
-  margin-top: 20px;
-  text-align: center;
-  margin-right: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+main #instagram {
+  position: relative;
+}
+
+main #instagram .instagram img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+main #instagram .instagram div {
+  cursor: pointer;
+  position: relative;
+}
+
+main #instagram .instagram div::after {
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  content: "\f16d";
+  position: absolute;
+  font-family: "Playfair Display",serif;
+  top: 52%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #eee;
+  font-size: 28px;
+  opacity: 0;
+}
+
+main #instagram .instagram div:hover::after {
+  opacity: 1;
+}
+
+main #instagram .hastag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  letter-spacing: .2em;
 }
 
 main #footer {
@@ -1766,6 +1814,57 @@ main #product .container .row .aside .product-meta .tagged-as {
   font-family: "Montserrat", sans-serif;
 }
 
+main #shop-list .product-item {
+  cursor: pointer;
+  position: relative;
+}
+
+main #shop-list .product-item .overlay {
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+}
+
+main #shop-list .product-item .overlay .title h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+main #shop-list .product-item .overlay .price span {
+  font-size: 12px;
+}
+
+main #shop-list .product-item .overlay .button button {
+  padding: 15px 40px !important;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background-color: #f34f3f;
+}
+
+main #shop-list .product-item:hover .overlay {
+  opacity: 1;
+}
+
+main #products .product-item .photo img {
+  border-style: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main #products .product-item-small .price span {
+  margin-left: 0px !important;
+  opacity: 1 !important;
+}
+
 main #header {
   background-color: #fafaf9;
 }
@@ -1932,313 +2031,536 @@ main #progress-bar .bottom {
   padding: 10px;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  main #progress-bar .bottom {
-    overflow: hidden;
+main #accordion .container .upper-low {
+  padding: 100px 0;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .head {
+  padding: 13px 20px 13px 40px;
+  margin: 15px 0 0;
+  border: 1px solid #eee;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .head:hover {
+  background: #fa4534;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .head:hover .headTitle {
+  color: white;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .head .headTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .head .headTitle::before {
+  content: "\002D";
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 10px;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .head .headTitle::before:hover {
+  color: #eee;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .head .active::before {
+  content: "\002B";
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 10px;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .head .active::before:hover {
+  color: #eee;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .text {
+  padding: 34px 0 20px;
+  border: none;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .text p {
+  margin: 0;
+  color: #6d6a6a;
+  line-height: 26px;
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .inactive {
+  display: none;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .active-head1 {
+  background: #fa4534;
+}
+
+main #accordion .container .upper-low .accordion1 .accHeadd .active-head1 .headTitle {
+  color: white;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .head {
+  padding: 13px 20px 13px 40px;
+  margin: 15px 0 0;
+  border: 1px solid #eee;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .head:hover {
+  background: #fa4534;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .head:hover .headTitle {
+  color: white;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .head .headTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .head .headTitle::before {
+  content: "\002D";
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 10px;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .head .headTitle::before:hover {
+  color: #eee;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .head .active::before {
+  content: "\002B";
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 10px;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .head .active::before:hover {
+  color: #eee;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .text {
+  padding: 34px 0 20px;
+  border: none;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .text p {
+  margin: 0;
+  color: #6d6a6a;
+  line-height: 26px;
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .inactive {
+  display: none;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .active-head1 {
+  background: #fa4534;
+}
+
+main #accordion .container .upper-low .accordion2 .accHeadd .active-head1 .headTitle {
+  color: white;
+}
+
+main #accordion .container .lower-row {
+  padding: 100px 0;
+}
+
+main #accordion .container .lower-row .accordion3 .accHeadd .head {
+  padding: 13px 20px 13px 40px;
+  margin: 15px 0 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  position: relative;
+}
+
+main #accordion .container .lower-row .accordion3 .accHeadd .head:hover .headTitle {
+  color: #fa4534;
+}
+
+main #accordion .container .lower-row .accordion3 .accHeadd .head .headTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+main #accordion .container .lower-row .accordion3 .accHeadd .head .headTitle::before {
+  content: "\002D";
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 10px;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+main #accordion .container .lower-row .accordion3 .accHeadd .head .headTitle::before:hover {
+  color: #eee;
+}
+
+main #accordion .container .lower-row .accordion3 .accHeadd .head .active::before {
+  content: "\002B";
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 10px;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+main #accordion .container .lower-row .accordion3 .accHeadd .head .active::before:hover {
+  color: #eee;
+}
+
+main #accordion .container .lower-row .accordion3 .accHeadd .text {
+  padding: 34px 0 20px;
+  border: none;
+}
+
+main #accordion .container .lower-row .accordion3 .accHeadd .text p {
+  margin: 0;
+  color: #6d6a6a;
+  line-height: 26px;
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+
+main #accordion .container .lower-row .accordion3 .accHeadd .inactive {
+  display: none;
+}
+
+main #accordion .container .lower-row .accordion3 .accHeadd .active-head2 .headTitle {
+  color: #fa4534;
+}
+
+main #accordion .container .lower-row .accordion4 .accHeadd .head {
+  padding: 13px 20px 13px 40px;
+  margin: 15px 0 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  position: relative;
+}
+
+main #accordion .container .lower-row .accordion4 .accHeadd .head:hover .headTitle {
+  color: #fa4534;
+}
+
+main #accordion .container .lower-row .accordion4 .accHeadd .head .headTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+main #accordion .container .lower-row .accordion4 .accHeadd .head .headTitle::before {
+  content: "\002D";
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 10px;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+main #accordion .container .lower-row .accordion4 .accHeadd .head .headTitle::before:hover {
+  color: #eee;
+}
+
+main #accordion .container .lower-row .accordion4 .accHeadd .head .active::before {
+  content: "\002B";
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 10px;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.6 px;
+  color: #1b1b1b;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+main #accordion .container .lower-row .accordion4 .accHeadd .head .active::before:hover {
+  color: #eee;
+}
+
+main #accordion .container .lower-row .accordion4 .text {
+  padding: 34px 0 20px;
+  border: none;
+}
+
+main #accordion .container .lower-row .accordion4 .text p {
+  margin: 0;
+  color: #6d6a6a;
+  line-height: 26px;
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+
+main #accordion .container .lower-row .accordion4 .inactive {
+  display: none;
+}
+
+main #accordion .container .lower-row .accordion4 .active-head2 .headTitle {
+  color: #fa4534;
+}
+
+@media only screen and (max-width: 1200px) {
+  header nav .navigator {
+    width: 100%;
+  }
+  header nav .navigator .main {
+    margin-left: 20px !important;
+  }
+  header nav .navigator .main .content .leftsideoption {
+    right: 83.5%;
+  }
+  header nav .navigator .main .content .subss {
+    font-size: 11px;
+    padding-top: 3px;
+  }
+  header nav .navigator .main .content .subss h2 {
+    font-size: 24px;
+  }
+  header .cart-dropdown {
+    margin-left: -130px !important;
   }
 }
 
-#accordion .container .upper-low {
-  padding: 100px 0;
-}
-
-#accordion .container .upper-low .accordion1 .accHeadd .head {
-  padding: 13px 20px 13px 40px;
-  margin: 15px 0 0;
-  border: 1px solid #eee;
-  cursor: pointer;
-  position: relative;
-  -webkit-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
-}
-
-#accordion .container .upper-low .accordion1 .accHeadd .head:hover {
-  background: #fa4534;
-}
-
-#accordion .container .upper-low .accordion1 .accHeadd .head:hover .symbol {
-  color: white;
-}
-
-#accordion .container .upper-low .accordion1 .accHeadd .head:hover .headTitle {
-  color: white;
-}
-
-#accordion .container .upper-low .accordion1 .accHeadd .head .symbol {
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  top: 34%;
-  left: 10px;
-  width: 20px;
-  height: 18px;
-  margin: -1px 0 0;
-  font-size: 18px;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 1.6 px;
-  color: #1b1b1b;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-
-#accordion .container .upper-low .accordion1 .accHeadd .head .headTitle {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  line-height: 32px;
-  font-weight: 500;
-  letter-spacing: 1.6 px;
-  color: #1b1b1b;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-
-#accordion .container .upper-low .accordion1 .accHeadd .text {
-  padding: 34px 0 20px;
-  border: none;
-}
-
-#accordion .container .upper-low .accordion1 .accHeadd .text p {
-  margin: 0;
-  color: #6d6a6a;
-  line-height: 26px;
-  font-family: "Lora", serif;
-  font-size: 15px;
-}
-
-#accordion .container .upper-low .accordion1 .accHeadd .inactive {
-  display: none;
-}
-
-#accordion .container .upper-low .accordion1 .accHeadd .active-head1 {
-  background: #fa4534;
-}
-
-#accordion .container .upper-low .accordion1 .accHeadd .active-head1 .symbol {
-  color: white;
-}
-
-#accordion .container .upper-low .accordion1 .accHeadd .active-head1 .headTitle {
-  color: white;
-}
-
-#accordion .container .upper-low .accordion2 .accHeadd .head {
-  padding: 13px 20px 13px 40px;
-  margin: 15px 0 0;
-  border: 1px solid #eee;
-  cursor: pointer;
-  position: relative;
-  -webkit-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
-}
-
-#accordion .container .upper-low .accordion2 .accHeadd .head:hover {
-  background: #fa4534;
-}
-
-#accordion .container .upper-low .accordion2 .accHeadd .head:hover .symbol {
-  color: white;
-}
-
-#accordion .container .upper-low .accordion2 .accHeadd .head:hover .headTitle {
-  color: white;
-}
-
-#accordion .container .upper-low .accordion2 .accHeadd .head .symbol {
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  top: 34%;
-  left: 10px;
-  width: 20px;
-  height: 18px;
-  margin: -1px 0 0;
-  font-size: 18px;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 1.6 px;
-  color: #1b1b1b;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-
-#accordion .container .upper-low .accordion2 .accHeadd .head .headTitle {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  line-height: 32px;
-  font-weight: 500;
-  letter-spacing: 1.6 px;
-  color: #1b1b1b;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-
-#accordion .container .upper-low .accordion2 .accHeadd .text {
-  padding: 34px 0 20px;
-  border: none;
-}
-
-#accordion .container .upper-low .accordion2 .accHeadd .text p {
-  margin: 0;
-  color: #6d6a6a;
-  line-height: 26px;
-  font-family: "Lora", serif;
-  font-size: 15px;
-}
-
-#accordion .container .upper-low .accordion2 .accHeadd .inactive {
-  display: none;
-}
-
-#accordion .container .upper-low .accordion2 .accHeadd .active-head1 {
-  background: #fa4534;
-}
-
-#accordion .container .upper-low .accordion2 .accHeadd .active-head1 .chevron {
-  color: white;
-}
-
-#accordion .container .upper-low .accordion2 .accHeadd .active-head1 .headTitle {
-  color: white;
-}
-
-#accordion .container .lower-row {
-  padding: 100px 0;
-}
-
-#accordion .container .lower-row .accordion3 .accHeadd .head {
-  padding: 13px 20px 13px 40px;
-  margin: 15px 0 0;
-  border-bottom: 1px solid #eee;
-  cursor: pointer;
-  position: relative;
-}
-
-#accordion .container .lower-row .accordion3 .accHeadd .head:hover .symbol {
-  color: #fa4534;
-}
-
-#accordion .container .lower-row .accordion3 .accHeadd .head:hover .headTitle {
-  color: #fa4534;
-}
-
-#accordion .container .lower-row .accordion3 .accHeadd .head .chevron {
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  top: 34%;
-  left: 10px;
-  width: 20px;
-  height: 18px;
-  margin: -1px 0 0;
-  font-size: 18px;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 1.6 px;
-  color: #1b1b1b;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-
-#accordion .container .lower-row .accordion3 .accHeadd .head .headTitle {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  line-height: 32px;
-  font-weight: 500;
-  letter-spacing: 1.6 px;
-  color: #1b1b1b;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-
-#accordion .container .lower-row .accordion3 .accHeadd .text {
-  padding: 34px 0 20px;
-  border: none;
-}
-
-#accordion .container .lower-row .accordion3 .accHeadd .text p {
-  margin: 0;
-  color: #6d6a6a;
-  line-height: 26px;
-  font-family: "Lora", serif;
-  font-size: 15px;
-}
-
-#accordion .container .lower-row .accordion3 .accHeadd .inactive {
-  display: none;
-}
-
-#accordion .container .lower-row .accordion3 .accHeadd .active-head2 .symbol {
-  color: #fa4534;
-}
-
-#accordion .container .lower-row .accordion3 .accHeadd .active-head2 .headTitle {
-  color: #fa4534;
-}
-
-#accordion .container .lower-row .accordion4 .accHeadd .head {
-  padding: 13px 20px 13px 40px;
-  margin: 15px 0 0;
-  border-bottom: 1px solid #eee;
-  cursor: pointer;
-  position: relative;
-}
-
-#accordion .container .lower-row .accordion4 .accHeadd .head:hover .symbol {
-  color: #fa4534;
-}
-
-#accordion .container .lower-row .accordion4 .accHeadd .head:hover .headTitle {
-  color: #fa4534;
-}
-
-#accordion .container .lower-row .accordion4 .accHeadd .head .symbol {
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  top: 34%;
-  left: 10px;
-  width: 20px;
-  height: 18px;
-  margin: -1px 0 0;
-  font-size: 18px;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 1.6 px;
-  color: #1b1b1b;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-
-#accordion .container .lower-row .accordion4 .accHeadd .head .headTitle {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  line-height: 32px;
-  font-weight: 500;
-  letter-spacing: 1.6 px;
-  color: #1b1b1b;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-
-#accordion .container .lower-row .accordion4 .accHeadd .text {
-  padding: 34px 0 20px;
-  border: none;
-}
-
-#accordion .container .lower-row .accordion4 .accHeadd .text p {
-  margin: 0;
-  color: #6d6a6a;
-  line-height: 26px;
-  font-family: "Lora", serif;
-  font-size: 15px;
-}
-
-#accordion .container .lower-row .accordion4 .accHeadd .inactive {
-  display: none;
-}
-
-#accordion .container .lower-row .accordion4 .accHeadd .active-head2 .symbol {
-  color: #fa4534;
-}
-
-#accordion .container .lower-row .accordion4 .accHeadd .active-head2 .headTitle {
-  color: #fa4534;
+@media (min-width: 375px) and (max-width: 992px) {
+  header nav .fa-bars {
+    display: block !important;
+    float: right;
+    margin-top: -34px;
+  }
+  header nav .icons {
+    display: none;
+  }
+  header nav .icons sup p {
+    display: none;
+  }
+  header nav .sidebar {
+    right: -1000px;
+    background-color: white !important;
+    z-index: 999;
+    margin-left: 350px !important;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  header nav .navigator {
+    z-index: 999;
+  }
+  header nav .navigator .fa-window-close {
+    display: block !important;
+    float: right;
+    margin-right: 120px;
+    margin-top: 40px;
+  }
+  header nav .navigator .margin-left {
+    margin-left: 0px !important;
+  }
+  header nav .navigator .main {
+    z-index: 20;
+    clear: both;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  header nav .navigator .main a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+  }
+  header nav .navigator .main .header {
+    z-index: 20;
+    position: relative;
+  }
+  header nav .navigator .main .option {
+    z-index: 999999999999;
+    padding-top: 10px !important;
+    line-height: 2.3;
+    display: none;
+    position: relative;
+    background-color: white;
+  }
+  header nav .navigator .main .option a {
+    color: #8b8b8b !important;
+  }
+  header nav .navigator .main .option ul {
+    width: 310%;
+  }
+  header nav .navigator .main .option li {
+    margin-left: 24px;
+    padding-bottom: 8px;
+  }
+  header nav .navigator .main .option .leftsideoption:before {
+    content: "" !important;
+  }
+  header nav .navigator .main .option .leftsideoptioninfo {
+    display: none;
+    clear: both !important;
+    margin-top: 0px !important;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    right: 0% !important;
+  }
+  header nav .navigator .main .option .rightsideoptioninfo {
+    display: none;
+    clear: both !important;
+    margin-top: 0px !important;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    left: 0% !important;
+  }
+  header nav .navigator .main .option .subss {
+    width: 1100px;
+    margin-left: 0px;
+    background-color: white;
+    clear: both !important;
+    display: inline-block !important;
+  }
+  header nav .navigator .main .option .subss .subs {
+    width: 25%;
+  }
+  header nav .navigator .main .option .subss .subs .subheader h2 {
+    font-size: 14px !important;
+    color: #8b8b8b !important;
+    display: inline-block;
+  }
+  header nav .navigator .main .option .subss .subs .subheader::after {
+    content: ">";
+  }
+  header nav .navigator .main .option .subss .subs .subcontent {
+    display: none;
+    margin-top: 0px !important;
+  }
+  main #video .info {
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+  main #email .button {
+    margin-left: 0px !important;
+    width: 25% !important;
+    left: 22%;
+  }
+  main #tab .tab {
+    margin-top: 20px !important;
+  }
+  main #accordion .sides {
+    margin-top: 50px;
+  }
+  main #progress-bar .bottom {
+    overflow: hidden;
+  }
 }
 /*# sourceMappingURL=Flower-Shop-Design.css.map */
