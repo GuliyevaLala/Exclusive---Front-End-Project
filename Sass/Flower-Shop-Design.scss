@@ -16,7 +16,7 @@ html {
 
 .sticky {
   position: fixed;
-  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3); //transition problemi var DANGERR
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   // transition: 2s ease-in-out;
   opacity: .8;
 
@@ -1212,19 +1212,20 @@ main {
 
         &::after {
           transition: opacity .3s;
-          content: "\f16d";
+          content: '\f16d'; ///instagram logosu gorunmur(
+          fill: cornflowerblue;
           position: absolute;
           font-family: "Playfair Display", serif;
           top: 52%;
           left: 50%;
-          transform: translate(-50%, -50%);
-          color: #eee;
+          color: rgb(43, 5, 5);
           font-size: 28px;
           opacity: 0;
         }
 
         &:hover::after {
           opacity: 1;
+          
         }
       }
     }
@@ -2337,7 +2338,7 @@ main {
                 @include symbol();
               }
 
-              .active::before {
+              .active:hover {
                 content: "\002B";
                 @include symbol();
 

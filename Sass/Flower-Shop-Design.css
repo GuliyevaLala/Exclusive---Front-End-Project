@@ -1207,14 +1207,13 @@ main #instagram .instagram div {
 main #instagram .instagram div::after {
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
-  content: "\f16d";
+  content: '\f16d';
+  fill: cornflowerblue;
   position: absolute;
   font-family: "Playfair Display", serif;
   top: 52%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #eee;
+  color: #2b0505;
   font-size: 28px;
   opacity: 0;
 }
@@ -2409,7 +2408,7 @@ main #accordion .container .lower-row .accordion4 .accHeadd .head .headTitle::be
   color: #eee;
 }
 
-main #accordion .container .lower-row .accordion4 .accHeadd .head .active::before {
+main #accordion .container .lower-row .accordion4 .accHeadd .head .active:hover {
   content: "\002B";
   font-family: "Montserrat", sans-serif;
   position: absolute;
@@ -2427,7 +2426,7 @@ main #accordion .container .lower-row .accordion4 .accHeadd .head .active::befor
   transition: color 0.2s ease-out;
 }
 
-main #accordion .container .lower-row .accordion4 .accHeadd .head .active::before:hover {
+main #accordion .container .lower-row .accordion4 .accHeadd .head .active:hover:hover {
   color: #eee;
 }
 
