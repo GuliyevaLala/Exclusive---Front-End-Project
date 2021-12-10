@@ -1,58 +1,10 @@
-$(document).ready(function(){
-    $(".instagram").owlCarousel(
-        {
-            items: 4,
-            loop: true,
-            autoplay: true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                576:{
-                    items:2
-                },
-                768:{
-                    items:3
-                },
-                992:{
-                    items:4
-                }
-            }
-        }
-    );
-  
 
-  $(document).ready(function(){
-    $(".say").owlCarousel(
-        {
-            items: 1,
-            loop: true,
-            autoplay: true
-        }
-    );
-  });
-})
+
+
+
+
     
-
-
-
-
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:1
-            },
-            1000:{
-                items:1
-            }
-        }
-    })
+    
     // sticky header
 $(function(){
   $(window).scroll(function(){
@@ -92,35 +44,7 @@ $(function(){
 })       // climbup
 
   
-let list = document.querySelectorAll("#shop .categories ul li a");
-let types = document.querySelectorAll("#shop .types .type");
 
-
-    for (let element of list) {
-        element.onclick = function () {
-            document.querySelector(".activeCategory").classList.remove("activeCategory");
-            this.classList.add("activeCategory");
-            let data_id = this.getAttribute("data-id");
-            for (let type of types) {
-                if (data_id == type.getAttribute("data-id")) {
-                    document.querySelector(".activetype").classList.remove("activetype");
-                    type.classList.add("activetype");
-                }
-            }
-        }
-    }
-
-    $('.flower').hover(function () {
-        let text = $(this).children().last();
-        text.children().eq(2).stop(true, true).animate({ "margin-right": "-400px" });
-        text.children().eq(1).stop(true, true).animate({ "margin-left": "107" });
-    }, function () {
-        let text = $(this).children().last()
-        text.children().eq(2).stop(true, true).animate({ "margin-right": "0px" });
-        text.children().eq(1).stop(true, true).animate({ "margin-left": "-400px" });
-
-
-    });
    
 
 // pagesssssssssssssssssssssssssssssssssssssss
@@ -161,6 +85,7 @@ function myFunction(x) {
     } else {
         $(".fa-window-close").click(function(){
             $(".sidebar").animate({"right":"-1000px"})
+            
         })
         $(".fa-bars").click(function(){
             $(".sidebar").animate({"right":"0"})

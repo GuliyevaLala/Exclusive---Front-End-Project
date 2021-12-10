@@ -531,6 +531,17 @@ main #slider {
   background-color: #f3f3f3;
   position: relative;
   min-height: 488px;
+  -webkit-animation-name: animate;
+          animation-name: animate;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   width: 100%;
 }
 
@@ -621,6 +632,30 @@ main #slider .slideshow .item img {
   min-width: 1519px;
   position: relative;
   overflow: hidden;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-image: url(../photos/1.png);
+  }
+  50% {
+    background-image: url(../photos/2.png);
+  }
+  100% {
+    background-image: url(../photos/3.png);
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-image: url(../photos/1.png);
+  }
+  50% {
+    background-image: url(../photos/2.png);
+  }
+  100% {
+    background-image: url(../photos/3.png);
+  }
 }
 
 main #shop {
@@ -1164,11 +1199,6 @@ main #instagram {
   position: relative;
 }
 
-main #instagram .instagram img {
-  vertical-align: middle;
-  border-style: none;
-}
-
 main #instagram .instagram div {
   cursor: pointer;
   position: relative;
@@ -1179,7 +1209,7 @@ main #instagram .instagram div::after {
   transition: opacity .3s;
   content: "\f16d";
   position: absolute;
-  font-family: "Playfair Display",serif;
+  font-family: "Playfair Display", serif;
   top: 52%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1814,6 +1844,17 @@ main #product .container .row .aside .product-meta .tagged-as {
   font-family: "Montserrat", sans-serif;
 }
 
+main #shop-list-title {
+  background-color: #f3f3f3;
+}
+
+main #shop-list-title .container .row h1 {
+  margin: 0;
+  color: #0e0e0e;
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+}
+
 main #shop-list .product-item {
   cursor: pointer;
   position: relative;
@@ -2411,38 +2452,208 @@ main #accordion .container .lower-row .accordion4 .active-head2 .headTitle {
   color: #fa4534;
 }
 
-@media only screen and (max-width: 1200px) {
-  header nav .navigator {
-    width: 100%;
-  }
-  header nav .navigator .main {
-    margin-left: 20px !important;
-  }
-  header nav .navigator .main .content .leftsideoption {
-    right: 83.5%;
-  }
-  header nav .navigator .main .content .subss {
-    font-size: 11px;
-    padding-top: 3px;
-  }
-  header nav .navigator .main .content .subss h2 {
-    font-size: 24px;
-  }
-  header .cart-dropdown {
-    margin-left: -130px !important;
-  }
-}
-
-@media (min-width: 375px) and (max-width: 992px) {
+@media screen and (max-width: 767px) {
   header nav .fa-bars {
     display: block !important;
     float: right;
     margin-top: -34px;
   }
-  header nav .icons {
+  header nav #icons {
     display: none;
   }
-  header nav .icons sup p {
+  header nav #icons sup {
+    display: none;
+  }
+  header nav .sidebar {
+    width: 100%;
+    right: -380px;
+    background-color: white !important;
+    z-index: 999;
+    margin-left: 350px !important;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  header nav .navigator {
+    z-index: 999;
+  }
+  header nav .navigator .fa-window-close {
+    display: block !important;
+    float: right;
+    margin-right: 120px;
+    margin-top: 40px;
+  }
+  header nav .navigator .margin-left {
+    margin-left: 0px !important;
+  }
+  header nav .navigator .main {
+    z-index: 20;
+    clear: both;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  header nav .navigator .main a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+  }
+  header nav .navigator .main .header {
+    z-index: 20;
+    position: relative;
+  }
+  header nav .navigator .main .option {
+    z-index: 999999999999;
+    padding-top: 10px !important;
+    line-height: 2.3;
+    display: none;
+    position: relative;
+    background-color: white;
+  }
+  header nav .navigator .main .option a {
+    color: #8b8b8b !important;
+  }
+  header nav .navigator .main .option ul {
+    width: 310%;
+  }
+  header nav .navigator .main .option li {
+    margin-left: 24px;
+    padding-bottom: 8px;
+  }
+  header nav .navigator .main .option .leftsideoption:before {
+    content: "" !important;
+  }
+  header nav .navigator .main .option .leftsideoptioninfo {
+    display: none;
+    clear: both !important;
+    margin-top: 0px !important;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    right: 0% !important;
+  }
+  header nav .navigator .main .option .rightsideoptioninfo {
+    display: none;
+    clear: both !important;
+    margin-top: 0px !important;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    left: 0% !important;
+  }
+  header nav .navigator .main .option .subss {
+    width: 1100px;
+    margin-left: 0px;
+    background-color: white;
+    clear: both !important;
+    display: inline-block !important;
+  }
+  header nav .navigator .main .option .subss .subs {
+    width: 25%;
+  }
+  header nav .navigator .main .option .subss .subs .subheader h2 {
+    font-size: 14px !important;
+    color: #8b8b8b !important;
+    display: inline-block;
+  }
+  header nav .navigator .main .option .subss .subs .subheader::after {
+    content: ">";
+  }
+  header nav .navigator .main .option .subss .subs .subcontent {
+    display: none;
+    margin-top: 0px !important;
+  }
+  main #shop .types .flower .image img {
+    width: 80%;
+  }
+  main #shop .types .flower .image .expired {
+    margin: 15px 0 0 45px;
+  }
+  main #shop .types .flower .image .saleproduct {
+    margin: 15px 0 0 58px;
+  }
+  main #subscribe-field .container .row .subscribe .button {
+    padding: 0px 14px;
+  }
+  main #valentine {
+    width: 391px;
+  }
+  main #valentine .quote .context {
+    width: 100%;
+  }
+  .climbup {
+    left: 311px;
+  }
+  main #slider .line {
+    display: none;
+  }
+  main #blog .container .text .description {
+    min-width: 0;
+  }
+  main #team .container .row .member .position {
+    margin-left: 16px;
+  }
+  main #team .container .row .member .image {
+    margin-left: 80px;
+  }
+  main #team .container .row .member .name {
+    margin-left: 38px;
+  }
+  main #team .container .text .description {
+    min-width: 0px;
+  }
+  main #tabs .container .upper-row .tab1 .option-header,
+  main #tabs .container .upper-row .tab2 .option-header,
+  main #tabs .container .upper-row .tab3 .option-header {
+    display: block;
+  }
+  main #tabs .container .middle-row .tab3 .option-header {
+    display: block;
+  }
+  main #tabs .container .lower-row .tab4 {
+    display: block;
+  }
+  main #tabs .container .lower-row .tab4 .option-header {
+    width: 100%;
+  }
+  main #tabs .container .lower-row .tab4 .option-context {
+    width: 100%;
+  }
+  main #progress-bar .bottom .hidden-background, main #progress-bar .right .hidden-background, main #progress-bar .left .hidden-background {
+    width: 355px !important;
+  }
+  main #header .text {
+    padding: 75px 54px !important;
+  }
+  main #header .text p {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  main #title .text {
+    padding: 75px 54px !important;
+  }
+  main #title .text p {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  header .climbup {
+    float: left;
+  }
+  header nav .fa-bars {
+    display: block !important;
+    float: right;
+    margin-top: -34px;
+  }
+  header nav #icons {
+    display: none;
+  }
+  header nav #icons sup {
     display: none;
   }
   header nav .sidebar {
